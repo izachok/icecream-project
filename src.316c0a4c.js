@@ -3,4 +3,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{"./../fonts/titanone-regular.ttf":[["titanone-regular.b6c26aeb.ttf","a3xQ"],"a3xQ"],"./../fonts/titanone-regular.woff":[["titanone-regular.64578e73.woff","SGnT"],"SGnT"],"./../fonts/dmsans-regular.ttf":[["dmsans-regular.ed45b54c.ttf","zuBA"],"zuBA"],"./../fonts/dmsans-regular.woff":[["dmsans-regular.45f0771a.woff","szfW"],"szfW"],"./../fonts/dmsans-medium.ttf":[["dmsans-medium.a8ed5e44.ttf","q38c"],"q38c"],"./../fonts/dmsans-medium.woff":[["dmsans-medium.1aeb65ac.woff","WtsP"],"WtsP"],"./../fonts/dmsans-bold.ttf":[["dmsans-bold.513166ba.ttf","A1O9"],"A1O9"],"./../fonts/dmsans-bold.woff":[["dmsans-bold.0a60fb16.woff","OY9m"],"OY9m"]}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss");
 },{"./sass/main.scss":"clu1"}]},{},["Focm"], null)
-//# sourceMappingURL=/icecream-project/src.8c2e58a9.js.map
+//# sourceMappingURL=/icecream-project/src.316c0a4c.js.map
