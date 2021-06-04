@@ -2,9 +2,11 @@
 @import './utils/functions';
 @import './utils/mixins';
 @import './utils/media-mixins';
+
 @import './base/fonts';
 @import './base/visually-hidden';
+@import './base/base-styles';
 @import './base/page-container';
 @import './base/container';
-@import './base/base-styles';
+
 @import './layouts/index';
