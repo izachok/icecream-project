@@ -1,0 +1,34 @@
+@font-face {
+  font-family: 'TitanOne';
+  src: url(../fonts/titanone-regular.ttf) format('ttf'),
+    url(../fonts/titanone-regular.woff) format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DMSans-Regular';
+  src: url(../fonts/dmsans-regular.ttf) format('ttf'),
+    url(../fonts/dmsans-regular.woff) format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DMSans-Medium';
+  src: url(../fonts/dmsans-medium.ttf) format('ttf'),
+    url(../fonts/dmsans-medium.woff) format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DMSans-Bold';
+  src: url(../fonts/dmsans-bold.ttf) format('ttf'), url(../fonts/dmsans-bold.woff) format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
