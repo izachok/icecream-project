@@ -1,5 +1,13 @@
 .customer-reviews {
   margin-top: 80px;
+
+  @include for-tablet-up {
+    margin-top: 121px;
+  }
+
+  @include for-desktop-up {
+    margin-top: 123px;
+  }
 }
 .customer-reviews__image {
   margin-bottom: 29px;
@@ -7,6 +15,14 @@
   margin-right: auto;
 
   border-radius: 50%;
+
+  @include for-tablet-up {
+    margin-bottom: 19px;
+  }
+
+  @include for-desktop-up {
+    margin-bottom: 15px;
+  }
 }
 .customer-reviews__text-wrap {
   min-width: 280px;
@@ -16,6 +32,22 @@
   padding: 44px 50px 25px 50px;
 
   background-color: var(--slider-backg-color);
+
+  @include for-tablet-up {
+    min-width: 620px;
+    height: 164px;
+
+    margin-bottom: 24px;
+    padding: 30px 38px;
+  }
+
+  @include for-desktop-up {
+    min-width: 926px;
+    height: 138px;
+
+    margin-bottom: 15px;
+    padding: 32px 52px;
+  }
 }
 .customer-reviews__gradient-wrap {
   position: relative;
@@ -33,6 +65,16 @@
     #e1e1e1 29px,
     #e1e1e1 30px
   );
+
+  @include for-tablet-up {
+    min-width: 544px;
+    height: 106px;
+  }
+
+  @include for-desktop-up {
+    min-width: 822px;
+    height: 74px;
+  }
 }
 .customer-reviews__text {
   position: relative;
@@ -50,6 +92,21 @@
   text-align: center;
 
   color: var(--block-title-color);
+
+  @include for-tablet-up {
+    width: 460px;
+
+    font-size: 14px;
+    line-height: 2.16;
+    letter-spacing: 0.04em;
+  }
+
+  @include for-desktop-up {
+    width: 750px;
+
+    font-size: 16px;
+    line-height: 1.86;
+  }
 }
 .customer-reviews__icon-brackets {
   position: absolute;
@@ -58,10 +115,23 @@
   left: 9px;
 
   fill: #e1e1e1;
+
+  @include for-tablet-up {
+    top: -16px;
+    left: 0px;
+  }
 }
 .customer-reviews__dot-wrap {
   margin-bottom: 18px;
   text-align: center;
+
+  @include for-tablet-up {
+    margin-bottom: 14px;
+  }
+
+  @include for-desktop-up {
+    margin-bottom: 15px;
+  }
 }
 .customer-reviews__icon-dot {
   fill: var(--slider-dots-color);
@@ -80,10 +150,28 @@
   text-align: center;
 
   color: var(--block-title-color);
+
+  @include for-tablet-up {
+    margin-bottom: 35px;
+
+    font-size: 16px;
+  }
+
+  @include for-desktop-up {
+    font-size: 20px;
+  }
 }
 .customer-reviews__icon-wrap {
   text-align: center;
   margin-bottom: 86px;
+
+  @include for-tablet-up {
+    margin-bottom: 119px;
+  }
+
+  @include for-desktop-up {
+    margin-bottom: 132px;
+  }
 }
 .customer-reviews__icon-home {
   fill: var(--slider-icon-color);
