@@ -11,20 +11,75 @@ $desktop-width: 1200px; // check this value
 $container-width: 1050px;
 
 $main-font: 'Roboto', sans-serif;
-//end template variables
-//other variables could be changed or deleted
 
-$logo-font: 'Raleway', sans-serif;
+:root {
+  --column-gap: 30px;
+  --column-tablet-gap: 20px;
+  --animation-time: 250ms;
+  --animation-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-$primary-text-color: #757575;
-$title-text-color: #212121;
-$accent-color: #2196f3;
-$primary-white-color: #ffffff;
-$secondary-white-color: rgba($primary-white-color, 0.6);
-$secondary-bg-color: #2f303a;
-$shadow-bg-color: #f5f4fa;
-$icons-color: #afb1b8;
-$black-color: #000000;
-$standart-shadow: 0px 1px 3px rgba($black-color, 0.12), 0px 1px 1px rgba($black-color, 0.14),
-  0px 2px 1px rgba($black-color, 0.2);
-$gradient-color: rgba(47, 48, 58, 0.4);
+  --mobile-width: 480px;
+  --tablet-width: 768px;
+  --desktop-width: 1200px; // check this value
+
+  --container-width: 1050px;
+
+  --main-font: 'Roboto', sans-serif;
+
+  //цвета заголовков секций
+  --primary-section-title-color: #d41443;
+  --secondary-section-title-color: #ffa5ba;
+  --secondary-section-title-color-hero: #ffffff;
+
+  //цвет текстовых заголовков блоков
+  --block-title-color: #000000;
+
+  //цвета текстов
+  --primary-text-color: #907e82;
+  --secondary-text-color: #ffffff;
+  --secondary-text-color-accent: #ffa5ba;
+
+  //цвета фонов секций
+  --primary-background-color: #ffffff;
+  --secondary-background-color: #fff5f6;
+  --hero-primary-background-color: #ffb8ca;
+  --hero-secondary-background-color: #ffa5ba;
+  --slider-backg-color: #fafafa;
+
+  //цвета фонов карточек в разделе продукты
+  --product-card-background-color-first: #ffb8ca;
+  --product-card-background-color-second: #f0d1a5;
+  --product-card-background-color-third: #c2e297;
+
+  //цвета фонов заголовков в разделе расписание
+  --primary-block-title-background-color: #f0d1a5;
+  --primary-block-title-background-color: #c2e297;
+
+  //цвета фонов кнопок
+  --primary-btn-background-color: #ffffff;
+  --secondary-btn-background-color: #d41443;
+  --primary-btn-backg-color-hover: #ecebeb;
+  --secondary-btn-backg-color-hover: #c7133e;
+
+  //цвет фона социальных кнопок
+  --social-btn-backg-color: #fea5bb;
+  --social-btn-backg-color-hover: #d41443;
+
+  //цвет иконок в слайдере
+  --slider-icon-color: #d31342;
+
+  //цвет точек в слайдере
+  --slider-dots-color: #c7133e;
+
+  //семейства шрифтов
+  --primary-font-family: 'DM Sans', sans-serif;
+  --secondary-font-family: 'Titan One', sans-serif;
+
+  //размеры шрифтов
+  --primary-section-title-size: 58px;
+  --secondary-section-title-size: 30px;
+  --secondary-section-title-size-hero: 38px;
+
+  --primary-text-size: 16px;
+  --secondary-text-size: 14px;
+}
