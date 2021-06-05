@@ -1,5 +1,6 @@
 .container {
-  padding: 0; //check this
+  padding-left: 20px;
+  padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
 
@@ -9,9 +10,13 @@
 
   @include for-tablet-up {
     width: $tablet-width;
+    padding-left: 36px;
+    padding-right: 36px;
   }
 
   @include for-desktop-up {
     width: $desktop-width;
+    padding-left: 115px;
+    padding-right: 115px;
   }
 }

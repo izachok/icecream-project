@@ -1,6 +1,6 @@
 body {
   font-family: $main-font, sans-serif;
-  color: $primary-text-color;
+  color: var(--primary-text-color);
   &.modal-open {
     overflow: hidden;
   }
@@ -13,7 +13,7 @@ ul {
 a {
   text-decoration: none;
   font-style: normal;
-  color: $accent-color;
+  //color: $accent-color;
 }
 p {
   margin: 0;
@@ -33,5 +33,5 @@ h5,
 h6 {
   margin: 0;
   padding: 0;
-  color: $title-text-color;
+  color: var(--primary-section-title-color);
 }
