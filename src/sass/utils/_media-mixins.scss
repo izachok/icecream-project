@@ -5,19 +5,19 @@
 //     }
 
 @mixin for-responsive-only {
-  @media screen and (max-width: $mobile-width - 1) {
+  @media screen and (max-width: var(--mobile-width) - 1) {
     @content;
   }
 }
 
 @mixin for-phone-only {
-  @media screen and (max-width: $tablet-width - 1) {
+  @media screen and (max-width: var(--tablet-width) - 1) {
     @content;
   }
 }
 
 @mixin for-tablet-down {
-  @media screen and (max-width: $desktop-width - 1) {
+  @media screen and (max-width: var(--desktop-width) - 1) {
     @content;
   }
 }
@@ -25,19 +25,19 @@
 //you can change value for min-width on $shift value. Best variant: 1 or -1
 //or use by default without shift value
 @mixin for-phone-up($shift: 0) {
-  @media screen and (min-width: $mobile-width+$shift) {
+  @media screen and (min-width: var(--mobile-width)+$shift) {
     @content;
   }
 }
 
 @mixin for-tablet-up($shift: 0) {
-  @media screen and (min-width: $tablet-width+$shift) {
+  @media screen and (min-width: var(--tablet-width)+$shift) {
     @content;
   }
 }
 
 @mixin for-desktop-up {
-  @media screen and (min-width: $desktop-width) {
+  @media screen and (min-width: var(--desktop-width)) {
     @content;
   }
 }
