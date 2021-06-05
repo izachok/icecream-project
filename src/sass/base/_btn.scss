@@ -1,0 +1,43 @@
+.btn {
+  width: 186px;
+  height: 44px;
+
+  border-radius: 22px;
+  border: none;
+  outline: none;
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.28;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  cursor: pointer;
+}
+
+.btn--primary {
+  background-color: #fff;
+  color: #d41443;
+
+  transition: background-color $animation-time $animation-function;
+
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
+  }
+}
+
+.btn--secondary {
+  background-color: #d41443;
+  color: #fff;
+
+  transition: background-color $animation-time $animation-function;
+
+  &:hover,
+  &:focus {
+    background-color: #c7133e;
+  }
+}

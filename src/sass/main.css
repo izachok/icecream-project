@@ -1,0 +1,161 @@
+@font-face {
+  font-family: 'TitanOne';
+  src: url(../fonts/titanone-regular.ttf) format("ttf"), url(../fonts/titanone-regular.woff) format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DMSans-Regular';
+  src: url(../fonts/dmsans-regular.ttf) format("ttf"), url(../fonts/dmsans-regular.woff) format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DMSans-Medium';
+  src: url(../fonts/dmsans-medium.ttf) format("ttf"), url(../fonts/dmsans-medium.woff) format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DMSans-Bold';
+  src: url(../fonts/dmsans-bold.ttf) format("ttf"), url(../fonts/dmsans-bold.woff) format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+body {
+  font-family: "Roboto", sans-serif, sans-serif;
+  color: #757575;
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  font-style: normal;
+  color: #2196f3;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  color: #212121;
+}
+
+.page-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+}
+
+.page-container__body {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  position: relative;
+  z-index: 0;
+}
+
+.container {
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
+.hero-header {
+  color: rebeccapurple;
+}
+
+.products {
+  color: greenyellow;
+}
+
+.about {
+  color: red;
+}
+
+.advantages {
+  color: green;
+}
+
+.gallery {
+  color: #190f49;
+}
+
+.customer-reviews {
+  color: yellow;
+}
+
+.contacts {
+  color: blue;
+}
+
+.footer {
+  color: indigo;
+}
+/*# sourceMappingURL=main.css.map */
