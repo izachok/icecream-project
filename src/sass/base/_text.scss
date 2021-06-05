@@ -1,0 +1,17 @@
+.text {
+  font-family: 'DMSans-Medium', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.62;
+
+  @include for-tablet-up {
+    font-size: 14px;
+    line-height: 1.76;
+    letter-spacing: 0.04em;
+  }
+
+  @include for-desktop-up {
+    font-size: 16px;
+  }
+}
