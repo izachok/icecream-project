@@ -1,7 +1,4 @@
 .btn {
-  width: 186px;
-  height: 44px;
-
   border-radius: 22px;
   border: none;
   outline: none;
@@ -16,13 +13,13 @@
   text-align: center;
 
   cursor: pointer;
+
+  transition: background-color $animation-time $animation-function;
 }
 
 .btn--primary {
   background-color: #fff;
   color: #d41443;
-
-  transition: background-color $animation-time $animation-function;
 
   &:hover,
   &:focus {
@@ -33,8 +30,6 @@
 .btn--secondary {
   background-color: #d41443;
   color: #fff;
-
-  transition: background-color $animation-time $animation-function;
 
   &:hover,
   &:focus {
