@@ -1,0 +1,414 @@
+:root {
+  --column-gap: 30px;
+  --column-tablet-gap: 20px;
+  --animation-time: 250ms;
+  --animation-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --mobile-width: 480px;
+  --tablet-width: 768px;
+  --desktop-width: 1200px;
+  --container-width: 1050px;
+  --main-font: 'Roboto', sans-serif;
+  --primary-section-title-color: #d41443;
+  --secondary-section-title-color: #ffa5ba;
+  --secondary-section-title-color-hero: #ffffff;
+  --block-title-color: #000000;
+  --primary-text-color: #907e82;
+  --secondary-text-color: #ffffff;
+  --secondary-text-color-accent: #ffa5ba;
+  --primary-background-color: #ffffff;
+  --secondary-background-color: #fff5f6;
+  --hero-primary-background-color: #ffb8ca;
+  --hero-secondary-background-color: #ffa5ba;
+  --slider-backg-color: #fafafa;
+  --product-card-background-color-first: #ffb8ca;
+  --product-card-background-color-second: #f0d1a5;
+  --product-card-background-color-third: #c2e297;
+  --primary-block-title-background-color: #f0d1a5;
+  --primary-block-title-background-color: #c2e297;
+  --primary-btn-background-color: #ffffff;
+  --secondary-btn-background-color: #d41443;
+  --primary-btn-backg-color-hover: #ecebeb;
+  --secondary-btn-backg-color-hover: #c7133e;
+  --social-btn-backg-color: #fea5bb;
+  --social-btn-backg-color-hover: #d41443;
+  --slider-icon-color: #d31342;
+  --slider-dots-color: #c7133e;
+  --primary-font-family: 'DM Sans', sans-serif;
+  --secondary-font-family: 'Titan One', sans-serif;
+  --primary-section-title-size: 58px;
+  --secondary-section-title-size: 30px;
+  --secondary-section-title-size-hero: 38px;
+  --primary-text-size: 16px;
+  --secondary-text-size: 14px;
+}
+
+@font-face {
+  font-family: 'TitanOne';
+  src: url(../fonts/titanone-regular.ttf) format("ttf"), url(../fonts/titanone-regular.woff) format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DMSans-Regular';
+  src: url(../fonts/dmsans-regular.ttf) format("ttf"), url(../fonts/dmsans-regular.woff) format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DMSans-Medium';
+  src: url(../fonts/dmsans-medium.ttf) format("ttf"), url(../fonts/dmsans-medium.woff) format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DMSans-Bold';
+  src: url(../fonts/dmsans-bold.ttf) format("ttf"), url(../fonts/dmsans-bold.woff) format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+body {
+  font-family: "Roboto", sans-serif, sans-serif;
+  color: var(--primary-text-color);
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  font-style: normal;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  color: var(--primary-section-title-color);
+}
+
+.page-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+}
+
+.page-container__body {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  position: relative;
+  z-index: 0;
+}
+
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    padding-left: 115px;
+    padding-right: 115px;
+  }
+}
+
+.btn {
+  padding-right: 37px;
+  padding-left: 37px;
+  border-radius: 22px;
+  border: none;
+  outline: none;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.28;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn--primary {
+  background-color: #fff;
+  color: #d41443;
+}
+
+.btn--primary:hover, .btn--primary:focus {
+  background-color: #ecebeb;
+}
+
+.btn--secondary {
+  background-color: #d41443;
+  color: #fff;
+}
+
+.btn--secondary:hover, .btn--secondary:focus {
+  background-color: #c7133e;
+}
+
+.text {
+  font-family: 'DMSans-Medium', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.62;
+}
+
+@media screen and (min-width: 768px) {
+  .text {
+    font-size: 14px;
+    line-height: 1.76;
+    letter-spacing: 0.04em;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .text {
+    font-size: 16px;
+  }
+}
+
+.title {
+  font-family: 'TitanOne', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.title--primary {
+  color: #ffa5ba;
+  font-size: 18px;
+  line-height: 1.17;
+}
+
+@media screen and (min-width: 768px) {
+  .title--primary {
+    font-size: 26px;
+    line-height: 1.15;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .title--primary {
+    font-size: 30px;
+    line-height: 1.13;
+  }
+}
+
+.title--secondary {
+  color: #d41443;
+  font-size: 34px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+}
+
+@media screen and (min-width: 768px) {
+  .title--secondary {
+    font-size: 48px;
+    line-height: 1.14;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .title--secondary {
+    font-size: 58px;
+    line-height: 1.14;
+    letter-spacing: 0.06em;
+  }
+}
+
+.hero-header {
+  color: rebeccapurple;
+}
+
+.products {
+  color: greenyellow;
+}
+
+.about {
+  color: red;
+}
+
+.advantages {
+  color: green;
+}
+
+.gallery {
+  color: #190f49;
+}
+
+.customer-reviews {
+  color: yellow;
+}
+
+.contacts {
+  background-color: var(--secondary-background-color);
+}
+
+.contacts__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contacts__content {
+  width: 220px;
+  height: 427px;
+  padding: 43px 20px;
+  margin-bottom: 20px;
+  background-color: var(--primary-background-color);
+  -webkit-box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+          box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+}
+
+.contacts__subtitle-holder {
+  margin-bottom: 25px;
+  border-radius: 4px;
+}
+
+.contacts__subtitle-holder--primary {
+  width: 80px;
+  background-color: #f0d1a5;
+}
+
+.contacts__subtitle-holder--secondary {
+  width: 130px;
+  background-color: #c2e297;
+}
+
+.contacts__subtitle {
+  line-height: 1.34;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #ffffff;
+}
+
+.contacts__text {
+  line-height: 1.86;
+  letter-spacing: 0.04em;
+}
+
+.contacts__text--primary {
+  color: var(--block-title-color);
+}
+
+.contacts__text--accent {
+  color: var(--secondary-text-color-accent);
+}
+
+.contacts__text-desc {
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+
+.contacts__item {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-top: 1px solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.contacts__item-row {
+  margin-bottom: 10px;
+}
+
+.contacts__address {
+  margin-top: 25px;
+}
+
+.link {
+  text-decoration: none;
+  font-family: 'DMSans-Medium', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--primary-text-color);
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link:hover, .link:focus {
+  color: var(--secondary-text-color-accent);
+}
+
+.footer {
+  color: indigo;
+}
+/*# sourceMappingURL=main.css.map */
