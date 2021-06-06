@@ -284,9 +284,7 @@
 
 .products__overlay {
   position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flex-centered;
   top: 0;
   left: 0;
   width: 100%;
