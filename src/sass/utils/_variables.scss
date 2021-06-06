@@ -10,8 +10,6 @@ $desktop-width: 1200px; // check this value
 
 $container-width: 1050px;
 
-$main-font: 'Roboto', sans-serif;
-
 :root {
   --column-gap: 30px;
   --column-tablet-gap: 20px;
@@ -23,8 +21,6 @@ $main-font: 'Roboto', sans-serif;
   --desktop-width: 1200px; // check this value
 
   --container-width: 1050px;
-
-  --main-font: 'Roboto', sans-serif;
 
   //цвета заголовков секций
   --primary-section-title-color: #d41443;
@@ -72,8 +68,8 @@ $main-font: 'Roboto', sans-serif;
   --slider-dots-color: #c7133e;
 
   //семейства шрифтов
-  --primary-font-family: 'DM Sans', sans-serif;
-  --secondary-font-family: 'Titan One', sans-serif;
+  --primary-font-family: 'DMSans', sans-serif;
+  --secondary-font-family: 'TitanOne', sans-serif;
 
   //размеры шрифтов
   --primary-section-title-size: 58px;
