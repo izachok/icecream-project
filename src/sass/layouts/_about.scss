@@ -73,34 +73,39 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 280px;
+  max-width: 280px;
   height: 279px;
   @include for-tablet-up {
-    width: 340px;
+    max-width: 340px;
     height: 339px;
     margin-left: 0;
     margin-right: 0;
   }
   @include for-desktop-up {
-    width: 516px;
+    max-width: 516px;
     height: 516px;
     margin-left: 0;
     margin-right: 0;
   }
 }
 .about__descrp {
-  width: 220px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 30px;
+  padding-right: 30px;
   @include for-tablet-up {
-    width: 340px;
+    max-width: 340px;
     margin-left: 15px;
     margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
   }
   @include for-desktop-up {
-    width: 463px;
+    max-width: 463px;
     margin-left: 74px;
     margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -157,7 +162,7 @@
   }
 }
 .about__btn {
-  width: 176px;
+  max-width: 176px;
   height: 44px;
   justify-content: space-between;
 }
