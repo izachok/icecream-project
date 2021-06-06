@@ -1,3 +1,44 @@
-.contacts {
-  color: blue;
+.contacts__text--primary {
+  color: #000000;
+}
+
+.contacts__text--accent {
+  color: #ffa5ba;
+}
+
+.contacts__text-desc {
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+
+.contacts__item {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-top: 1px solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.contacts__item-row {
+  margin-bottom: 10px;
+}
+
+.contacts__address {
+  margin-top: 25px;
+}
+
+.link {
+  text-decoration: none;
+  font-family: 'DMSans-Medium', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+
+  color: #907e82;
+
+  transition: color $animation-time $animation-function;
+
+  &:hover,
+  &:focus {
+    color: #ffa5ba;;
 }
