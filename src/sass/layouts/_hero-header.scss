@@ -197,6 +197,41 @@
   }
 }
 
+.decoration__text {
+  display: none;
+
+  @include for-tablet-up {
+    display: block;
+    z-index: 2;
+
+    position: absolute;
+    left: 704px;
+    top: 128px;
+
+    font-family: 'DM Sans', sans-serif;
+    font-size: 8px;
+    line-height: 1.25;
+
+    color: var(--secondary-text-color);
+    background: hsla(345, 83%, 45%, 0);
+  }
+}
+
+.decoration__circle--position {
+  left: 718px;
+  top: 151px;
+}
+
+.decoration__number--position {
+  left: 690px;
+  top: 152px;
+}
+
+.decoration__text--position {
+  left: 683px;
+  top: 184px;
+}
+
 .top-panel__btn-buy {
   display: none;
 
