@@ -1,1 +1,97 @@
-<header id="hero-header" class="hero-header">Hero-header</header>
+<header id="hero-header" class="hero-header">
+  <div class="container">
+    <div class="top-panel">
+      <a href="./index.html" class="link"
+        ><img src="./images/logo/logo.png" width="199" height="50" alt="logo icecream"
+      /></a>
+
+      <nav class="nav">
+        <ul class="">
+          <li class="">
+            <a class="link" href="./index.html">Home</a>
+          </li>
+          <li class="">
+            <a class="link" href="#customer-reviews">About us</a>
+          </li>
+          <li class="">
+            <a class="link" href="#about">How it’s made?</a>
+          </li>
+          <li class="">
+            <a class="link" href="#products">Our products</a>
+          </li>
+          <li class="">
+            <a class="link" href="#contacts">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <button type="button" class="btn top-panel__btn" aria-expanded="false" data-menu-button>
+        <svg
+          width="20"
+          height="12"
+          class="top-panel__icon-menu"
+          aria-label="Переключатель мобильного меню"
+        >
+          <use href="./images/icons.svg#icon-menu"></use>
+        </svg>
+      </button>
+      <button type="button" class="btn top-panel__btn-buy">
+        <span class="top-panel__btn-buy--indent">Buy now</span
+        ><svg width="8" height="18" class="top-panel__icon-menu">
+          <use href="./images/icons.svg#icon-arrow"></use>
+        </svg>
+      </button>
+      <div class="decoration">
+        <div class="decoration__ellipse"></div>
+        <img
+          src="./images/mobile/ice-cream-cone_mobile.png"
+          alt="icecream"
+          width="171"
+          height="410"
+          class="decoration__icecream-cone"
+        />
+        <img
+          src="./images/tablet/so-tasty_tablet.png"
+          alt="so-tasty"
+          width="168"
+          height="133"
+          class="decoration__so-tasty"
+        />
+        <div class="decoration__circle"></div>
+        <p class="decoration__number">16</p>
+        <p class="decoration__text">cafes</p>
+        <div class="decoration__circle decoration__circle--position"></div>
+        <p class="decoration__number decoration__number--position">23</p>
+        <p class="decoration__text decoration__text--position">food trucks</p>
+      </div>
+    </div>
+    <section class="hero">
+      <h1 class="title hero__title">
+        ice cream <br />
+        made with <br />
+        <span class="hero__title--accent">passion</span>
+      </h1>
+      <ul class="hero__btn">
+        <li class="hero__item">
+          <a href="#products" class="link hero__link">Products</a>
+        </li>
+        <li class="hero__item hero__item--indent">
+          <a href="#about" class="link hero__link hero__link--color">How it’s made?</a>
+        </li>
+      </ul>
+      <div class="hero__block">
+        <img src="./images/tablet/milk_tablet.png" alt="milk" width="124" height="126" />
+        <div class="hero-block--position">
+          <p class="hero__description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et
+          </p>
+          <button type="button" class="btn description__btn">
+            <svg width="8" height="8" class="">
+              <use href="./images/icons.svg#icon-arrow-right"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+  </div>
+</header>
