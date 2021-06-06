@@ -13,9 +13,11 @@
   display: flex;
   align-items: center;
   padding-top: 6px;
+  margin-bottom: 137px;
 
   @include for-tablet-up {
     padding-top: 37px;
+    margin-bottom: 15px;
   }
 }
 
@@ -39,7 +41,9 @@
   position: relative;
   z-index: 3;
 
-  padding-top: 137px;
+  @include for-tablet-up {
+    padding-bottom: 28px;
+  }
 }
 
 .hero__title {
@@ -61,6 +65,11 @@
 
 .hero__btn {
   display: flex;
+  align-items: center;
+
+  @include for-tablet-up {
+    margin-bottom: 20px;
+  }
 }
 
 .hero__item {
