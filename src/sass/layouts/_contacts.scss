@@ -16,7 +16,7 @@
 }
 
 .contacts__content {
-  width: 220px;
+  min-width: 220px;
   height: 427px;
   padding: 43px 20px;
 
@@ -81,6 +81,8 @@
 }
 
 .contacts__address {
+  display: flex;
+  flex-direction: column;
   margin-top: 25px;
 }
 
@@ -127,7 +129,7 @@
 }
 
 .contacts__btn-icon {
-  width: 8px;
-  height: 16px;
+  width: 10px;
+  height: 20px;
   fill: currentColor;
 }
