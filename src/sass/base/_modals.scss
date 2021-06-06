@@ -1,0 +1,59 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: none;
+  overflow: auto;
+  background-color: rgba(#d41443, 0.3);
+  z-index: 9999;
+}
+
+.modal-window {
+  position: relative;
+  background-color: #ffffff;
+  width: 90%;
+  margin: 10% auto;
+  padding: 35px 20px;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.5);
+  border-radius: 24px;
+
+  @include for-tablet-up {
+    width: 70%;
+  }
+
+  @include for-desktop-up {
+    width: 50%;
+  }
+}
+
+.modal-window__icon {
+  fill: currentColor;
+}
+
+.modal-window__close {
+  position: absolute;
+  z-index: 4;
+  top: 10px;
+  right: 10px;
+  @include flex-centered(inline-flex);
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(#d41443, 0.6);
+  border-radius: 50%;
+  transition: get-transition-prop(color);
+  background-color: #fff;
+
+  &:hover,
+  &:focus {
+    color: var(--primary-section-title-color);
+  }
+}
+
+.open {
+  display: block;
+}
+
+// additional styles for sections
