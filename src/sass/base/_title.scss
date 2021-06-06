@@ -8,7 +8,7 @@
 }
 
 .title--primary {
-  color: #ffa5ba;
+  color: var(--secondary-section-title-color);
 
   font-size: 18px;
   line-height: 1.17;
@@ -25,7 +25,7 @@
 }
 
 .title--secondary {
-  color: #d41443;
+  color: var(--primary-section-title-color);
 
   font-size: 34px;
   line-height: 1.15;
