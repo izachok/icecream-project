@@ -1,3 +1,64 @@
 .advantages {
-  color: green;
+  background-color: var(--secondary-background-color);
+  padding-bottom: 97px;
+}
+
+.advantages {
+  // .advantages__container
+
+  &__container {
+  }
+}
+
+.advantages-list {
+  margin-bottom: -38px;
+
+  // .advantages-list__item
+  &__item {
+    width: 230px;
+    margin-bottom: 38px;
+  }
+
+  &__item::before {
+    display: block;
+    content: '';
+    height: 50px;
+    // background-size: auto;
+    background-repeat: no-repeat;
+    background-position: left;
+    // background-color: var(--primary-background-color);
+    margin-bottom: 16px;
+    // margin-right: auto;
+  }
+
+  // .advantages-list__title
+
+  &__title {
+    font-family: var(--secondary-font-family);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 1.139;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  // .advantages-list__text
+
+  &__text {
+    line-height: 1.7;
+    color: var(--block-title-color);
+  }
+}
+
+.advantages-list__item--milk::before {
+  background-image: url(../images/advantages/icon1.png);
+}
+
+.advantages-list__item--fruits::before {
+  background-image: url(../images/advantages/icon2.png);
+}
+
+.advantages-list__item--heart::before {
+  background-image: url(../images/advantages/icon3.png);
 }
