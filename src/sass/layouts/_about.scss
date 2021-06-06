@@ -1,3 +1,183 @@
 .about {
-  color: red;
+  width: 100%;
+  padding-top: 125px;
+  padding-bottom: 39px;
+  background-color: var(--secondary-background-color);
+  @include for-phone-only {
+    background-image: url('../images/mobile/bg-how-it-made_mobile.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-y: 90%;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/mobile/bg-how-it-made@2x_mobile.png');
+    }
+  }
+  @include for-tablet-up {
+    padding-top: 130px;
+    padding-bottom: 66px;
+  }
+  @include for-desktop-up {
+    padding-top: 125px;
+    padding-bottom: 65px;
+    background-image: url('../images/desktop/bg-how-it-made_desktop.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-y: 80%;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/desktop/bg-how-it-made@2x_desktop.png');
+    }
+  }
+  @media screen and (min-width: 1300px) {
+    background-image: url('../images/desktop/bg-how-it-made@2x_desktop.png');
+  }
+}
+.about__section {
+  @include for-tablet-up {
+    display: flex;
+    justify-content: center;
+  }
+}
+.about__label {
+  margin-bottom: 15px;
+  font-family: var(--secondary-font-family);
+  font-size: 18px;
+  line-height: 1.16;
+  letter-spacing: 0.04em;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--secondary-text-color-accent);
+  @include for-tablet-up {
+    font-size: 26px;
+    line-height: 1.15;
+  }
+  @include for-desktop-up {
+    font-size: 30px;
+    line-height: 1.13;
+  }
+}
+.about__title {
+  margin-bottom: 26px;
+  margin-right: 40px;
+  margin-left: 40px;
+  font-family: var(--secondary-font-family);
+  font-size: 34px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--primary-section-title-color);
+  @include for-tablet-up {
+    margin-bottom: 50px;
+    font-size: 48px;
+    line-height: 1.15;
+  }
+  @include for-desktop-up {
+    margin-bottom: 55px;
+    font-size: 58px;
+    letter-spacing: 0.06em;
+    line-height: 1.13;
+  }
+}
+.about__image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 280px;
+  height: 279px;
+  @include for-tablet-up {
+    max-width: 340px;
+    height: 339px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  @include for-desktop-up {
+    max-width: 516px;
+    height: 516px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+.about__descrp {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  @include for-tablet-up {
+    max-width: 340px;
+    margin-left: 15px;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  @include for-desktop-up {
+    max-width: 463px;
+    margin-left: 74px;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.about__text {
+  width: 100%;
+  margin-bottom: 30px;
+  margin-top: 46px;
+  color: var(--block-title-color);
+  text-align: left;
+  letter-spacing: 0.04em;
+  @include for-tablet-up {
+    font-size: 14px;
+    line-height: 1.76;
+  }
+  @include for-desktop-up {
+    margin-bottom: 35px;
+    font-size: 16px;
+    line-height: 1.76;
+  }
+}
+.about__text--second {
+  width: 100%;
+  margin-bottom: 7px;
+  color: var(--primary-text-color);
+  text-align: left;
+  @include for-tablet-up {
+    font-size: 14px;
+    line-height: 1.76;
+  }
+  @include for-desktop-up {
+    margin-bottom: 27px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.76;
+    letter-spacing: 0.04em;
+  }
+}
+.about__text--paragraf {
+  width: 100%;
+  margin-bottom: 17px;
+  color: var(--primary-text-color);
+  text-align: left;
+  @include for-tablet-up {
+    margin-bottom: 62px;
+    font-size: 14px;
+    line-height: 1.76;
+  }
+  @include for-desktop-up {
+    margin-bottom: 45px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.76;
+    letter-spacing: 0.04em;
+  }
+}
+.about__btn {
+  max-width: 176px;
+  height: 44px;
+  justify-content: space-between;
+}
+.btn__arrow {
+  fill: var(--secondary-btn-background-color);
+  width: 10px;
+  height: 10px;
+  display: flex;
 }
