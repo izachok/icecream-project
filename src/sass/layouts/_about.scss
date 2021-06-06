@@ -4,10 +4,13 @@
   padding-bottom: 39px;
   background-color: var(--secondary-background-color);
   @include for-phone-only {
-    background-image: url(../images/mobile/bg-how-it-made_mobile.png);
+    background-image: url('../images/mobile/bg-how-it-made_mobile.png');
     background-repeat: no-repeat;
     background-size: contain;
     background-position-y: 90%;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/mobile/bg-how-it-made@2x_mobile.png');
+    }
   }
   @include for-tablet-up {
     padding-top: 130px;
@@ -16,10 +19,16 @@
   @include for-desktop-up {
     padding-top: 125px;
     padding-bottom: 65px;
-    background-image: url(../images/desktop/bg-how-it-made_desktop.png);
+    background-image: url('../images/desktop/bg-how-it-made_desktop.png');
     background-repeat: no-repeat;
     background-size: contain;
     background-position-y: 80%;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/desktop/bg-how-it-made@2x_desktop.png');
+    }
+  }
+  @media screen and (min-width: 1300px) {
+    background-image: url('../images/desktop/bg-how-it-made@2x_desktop.png');
   }
 }
 .about__section {
