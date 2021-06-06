@@ -58,9 +58,11 @@
 
 .products__list {
   @include for-tablet-up {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    @include elements-set($gap: 20px);
+  }
+
+  @include for-desktop-up {
+    @include elements-set($gap: 30px);
   }
 }
 
@@ -72,20 +74,17 @@
   border-radius: 24px;
 
   @include for-tablet-up {
+    @include element($gap: 20px);
     margin-bottom: 0;
 
-    &:not(:last-child) {
-      margin-right: 20px;
-    }
-    flex-basis: get-column-basis(3);
+    flex-basis: get-column-basis(3, $gap: 20px);
     padding-left: 11px;
     padding-right: 11px;
   }
 
   @include for-desktop-up {
-    &:not(:last-child) {
-      margin-right: 30px;
-    }
+    @include element($gap: 30px);
+    flex-basis: get-column-basis(3, $gap: 30px);
   }
 
   &::before {
@@ -272,4 +271,47 @@
 
 .products__icon {
   fill: var(--secondary-btn-background-color);
+  transform: rotate(0deg);
+  transition: transform $animation-time $animation-function;
+}
+
+.products__icon--rotated {
+  transform: rotate(-90deg);
+}
+
+.products__overlay {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 55%;
+  padding: 5px;
+  border-radius: 24px;
+  color: var(--secondary-text-color);
+  transform: translateY(100%);
+  pointer-events: none;
+  opacity: 0;
+  transition: transform $animation-time $animation-function,
+    opacity $animation-time $animation-function;
+}
+
+.products__overlay--icecream {
+  background-color: #ffa5bc;
+}
+
+.products__overlay--icecofee {
+  background-color: #f0bd77;
+}
+
+.products__overlay--milkshakes {
+  background-color: #acc58c;
+}
+
+.overlay-show {
+  pointer-events: initial;
+  opacity: 1;
+  transform: translateY(50%);
 }
