@@ -105,6 +105,8 @@
   text-align: left;
   @include for-tablet-up {
     margin-left: 17px;
+    font-size: 14px;
+    line-height: 1.75;
   }
   @include for-desktop-up {
     margin-left: 74px;
@@ -122,6 +124,8 @@
   text-align: left;
   @include for-tablet-up {
     margin-left: 17px;
+    font-size: 14px;
+    line-height: 1.75;
   }
   @include for-desktop-up {
     margin-left: 74px;
@@ -142,6 +146,8 @@
   @include for-tablet-up {
     margin-bottom: 62px;
     margin-left: 17px;
+    font-size: 14px;
+    line-height: 1.75;
   }
   @include for-desktop-up {
     margin-left: 74px;
