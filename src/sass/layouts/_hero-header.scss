@@ -22,13 +22,13 @@
 }
 
 .top-panel__icon-menu {
-  stroke: #d41443;
+  stroke: var(--primary-section-title-color);
 }
 
 .top-panel__btn {
   margin-left: auto;
   padding: 0;
-  background-color: rgba(255, 184, 202, 0);
+  background-color: transparent;
 
   @include for-tablet-up {
     margin-right: 30px;
@@ -75,9 +75,7 @@
   padding: 7px 17px;
 
   border-radius: 20px;
-  font-family: DM Sans;
-  font-style: normal;
-  font-weight: normal;
+  font-family: var(--primary-font-family);
   font-size: 8px;
   line-height: 1.25;
   display: flex;
@@ -87,8 +85,7 @@
   background-color: var(--secondary-btn-background-color);
   color: var(--secondary-text-color);
 
-  transition: color var(--animation-time) var(--animation-function),
-    bacground-color var(--animation-time) var(--animation-function);
+  transition: get-transition-prop(color), get-transition-prop(background-color);
 
   &:hover,
   &:focus {
@@ -123,21 +120,22 @@
   @include for-tablet-up {
     width: 324px;
     height: 322px;
-    left: 307px;
+    left: 41%;
     top: 31px;
   }
 }
 
 .decoration__icecream-cone {
   position: absolute;
-  left: 117px;
+  right: 100px;
   top: 92px;
   z-index: 2;
+  transform: translateX(50%);
 
   @include for-tablet-up {
     width: 143px;
     height: 336px;
-    left: 378px;
+    right: 41%;
     top: 63px;
   }
 }
@@ -148,7 +146,7 @@
   @include for-tablet-up {
     display: block;
     position: absolute;
-    left: 566px;
+    right: 5%;
     top: 266px;
     z-index: 4;
   }
@@ -163,7 +161,7 @@
     position: absolute;
     width: 16px;
     height: 16px;
-    left: 718px;
+    right: 5%;
     top: 94px;
     z-index: 1;
 
@@ -182,7 +180,7 @@
     position: absolute;
     width: 33px;
     height: 32px;
-    left: 691px;
+    right: 6%;
     top: 96px;
     z-index: 2;
 
@@ -205,7 +203,7 @@
     z-index: 2;
 
     position: absolute;
-    left: 704px;
+    right: 5%;
     top: 128px;
 
     font-family: 'DM Sans', sans-serif;
@@ -218,17 +216,17 @@
 }
 
 .decoration__circle--position {
-  left: 718px;
+  right: 5%;
   top: 151px;
 }
 
 .decoration__number--position {
-  left: 690px;
+  right: 6%;
   top: 152px;
 }
 
 .decoration__text--position {
-  left: 683px;
+  right: 6%;
   top: 184px;
 }
 
@@ -248,9 +246,8 @@
     color: var(--secondary-btn-background-color);
     fill: currentColor;
 
-    transition: color var(--animation-time) var(--animation-function),
-      bacground-color var(--animation-time) var(--animation-function),
-      fill var(--animation-time) var(--animation-function);
+    transition: get-transition-prop(color), get-transition-prop(background-color),
+      get-transition-prop(fill);
 
     &:hover,
     &:focus {
@@ -291,4 +288,8 @@
   @include flex-centered;
 
   fill: var(--secondary-btn-background-color);
+}
+
+.nav {
+  display: none;
 }
