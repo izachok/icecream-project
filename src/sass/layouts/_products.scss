@@ -217,14 +217,17 @@
 }
 
 .products__text::before {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  content: '';
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
 
   display: block;
-
-  content: '\2026';
-  font-size: 2rem;
-  color: var(--secondary-text-color);
+  width: 26px;
+  height: 6px;
+  background-image: url('../images/icon-products.svg');
+  background-position: center;
 }
 
 .products__text {
