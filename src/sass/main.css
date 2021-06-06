@@ -412,23 +412,35 @@ h6 {
   color: var(--secondary-text-color-accent);
 }
 
+.contacts__btn-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .contacts__btn {
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   height: 44px;
   width: 161px;
-  margin-right: auto;
-  margin-left: auto;
   padding-left: 17px;
   padding-right: 17px;
 }
 
-.contacts__btn--secondary {
+.contacts__btn:not(:last-child) {
   margin-bottom: 10px;
 }
 
 .contacts__btn-text {
   font-size: 16px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .contacts__btn-icon {

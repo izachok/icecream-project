@@ -1,9 +1,10 @@
 .contacts {
-  // background-image: linear-gradient(
-  //   to bottom var(--primary-background-color) 6.5%,
-  //   var(--secondary-background-color) 93.5%
-  // );
-  background-color: var(--secondary-background-color);
+  width: 100vw;
+  height: 100%;
+  background-image: linear-gradient(
+    var(--primary-background-color) 84px,
+    var(--secondary-background-color) 84px
+  );
   padding-bottom: 113px;
 }
 
@@ -85,7 +86,7 @@
 
 .link {
   text-decoration: none;
-  font-family: 'DMSans', sans-serif;
+  font-family: inherit;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -101,22 +102,28 @@
   }
 }
 
-.contacts__btn {
-  justify-content: space-around;
-  height: 44px;
-  width: 161px;
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 17px;
-  padding-right: 17px;
+.contacts__btn-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.contacts__btn--secondary {
-  margin-bottom: 10px;
+.contacts__btn {
+  height: 44px;
+  width: 161px;
+  padding-left: 17px;
+  padding-right: 17px;
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
 }
 
 .contacts__btn-text {
   font-size: 16px;
+  @include flex-centered(inline-flex);
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .contacts__btn-icon {
