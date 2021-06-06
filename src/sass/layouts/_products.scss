@@ -50,7 +50,7 @@
   }
 
   @include for-desktop-up {
-    margin-bottom: 259px;
+    margin-bottom: 260px;
 
     font-size: 58px;
   }
@@ -105,7 +105,7 @@
     @include for-desktop-up {
       width: 335px;
       height: 335px;
-      bottom: 45%;
+      bottom: 43%;
     }
   }
 }
@@ -242,11 +242,13 @@
   color: var(--secondary-text-color);
 
   @include for-tablet-up {
+    margin-bottom: 40px;
     line-height: 1.76;
   }
 
   @include for-desktop-up {
     max-width: 241px;
+    margin-bottom: 62px;
     font-size: var(--primary-text-size);
   }
 }
@@ -262,6 +264,10 @@
 
   cursor: pointer;
   transition: background-color $animation-time $animation-function;
+
+  @include for-desktop-up {
+    margin-bottom: 50px;
+  }
 
   &:hover {
     background-color: var(--primary-btn-backg-color-hover);
