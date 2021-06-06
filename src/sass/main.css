@@ -7,7 +7,6 @@
   --tablet-width: 768px;
   --desktop-width: 1200px;
   --container-width: 1050px;
-  --main-font: 'Roboto', sans-serif;
   --primary-section-title-color: #d41443;
   --secondary-section-title-color: #ffa5ba;
   --secondary-section-title-color-hero: #ffffff;
@@ -33,8 +32,8 @@
   --social-btn-backg-color-hover: #d41443;
   --slider-icon-color: #d31342;
   --slider-dots-color: #c7133e;
-  --primary-font-family: 'DM Sans', sans-serif;
-  --secondary-font-family: 'Titan One', sans-serif;
+  --primary-font-family: 'DMSans', sans-serif;
+  --secondary-font-family: 'TitanOne', sans-serif;
   --primary-section-title-size: 58px;
   --secondary-section-title-size: 30px;
   --secondary-section-title-size-hero: 38px;
@@ -51,7 +50,7 @@
 }
 
 @font-face {
-  font-family: 'DMSans-Regular';
+  font-family: 'DMSans';
   src: url(../fonts/dmsans-regular.ttf) format("ttf"), url(../fonts/dmsans-regular.woff) format("woff");
   font-weight: 400;
   font-style: normal;
@@ -59,7 +58,7 @@
 }
 
 @font-face {
-  font-family: 'DMSans-Medium';
+  font-family: 'DMSans';
   src: url(../fonts/dmsans-medium.ttf) format("ttf"), url(../fonts/dmsans-medium.woff) format("woff");
   font-weight: 500;
   font-style: normal;
@@ -67,7 +66,7 @@
 }
 
 @font-face {
-  font-family: 'DMSans-Bold';
+  font-family: 'DMSans';
   src: url(../fonts/dmsans-bold.ttf) format("ttf"), url(../fonts/dmsans-bold.woff) format("woff");
   font-weight: 700;
   font-style: normal;
@@ -86,7 +85,7 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif, sans-serif;
+  font-family: var(--primary-font-family), sans-serif;
   color: var(--primary-text-color);
 }
 
@@ -155,13 +154,13 @@ h6 {
 
 @media screen and (min-width: 480px) {
   .container {
-    width: 480px;
+    width: var(--mobile-width);
   }
 }
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    width: var(--tablet-width);
     padding-left: 36px;
     padding-right: 36px;
   }
@@ -169,7 +168,7 @@ h6 {
 
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1200px;
+    width: var(--desktop-width);
     padding-left: 115px;
     padding-right: 115px;
   }
@@ -181,7 +180,7 @@ h6 {
   border-radius: 22px;
   border: none;
   outline: none;
-  font-family: inherit;
+  font-family: 'DMSans';
   font-weight: 700;
   font-size: 14px;
   line-height: 1.28;
@@ -198,25 +197,25 @@ h6 {
 }
 
 .btn--primary {
-  background-color: #fff;
-  color: #d41443;
+  background-color: var(--primary-btn-background-color);
+  color: var(--secondary-btn-background-color);
 }
 
 .btn--primary:hover, .btn--primary:focus {
-  background-color: #ecebeb;
+  background-color: var(--primary-btn-backg-color-hover);
 }
 
 .btn--secondary {
-  background-color: #d41443;
-  color: #fff;
+  background-color: var(--secondary-btn-background-color);
+  color: var(--primary-btn-background-color);
 }
 
 .btn--secondary:hover, .btn--secondary:focus {
-  background-color: #c7133e;
+  background-color: var(--secondary-btn-backg-color-hover);
 }
 
 .text {
-  font-family: 'DMSans-Medium', sans-serif;
+  font-family: 'DMSans', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -246,7 +245,7 @@ h6 {
 }
 
 .title--primary {
-  color: #ffa5ba;
+  color: var(--secondary-section-title-color);
   font-size: 18px;
   line-height: 1.17;
 }
@@ -266,7 +265,7 @@ h6 {
 }
 
 .title--secondary {
-  color: #d41443;
+  color: var(--primary-section-title-color);
   font-size: 34px;
   line-height: 1.15;
   letter-spacing: 0.04em;
@@ -313,9 +312,10 @@ h6 {
 
 .contacts {
   background-color: var(--secondary-background-color);
+  padding-bottom: 113px;
 }
 
-.contacts__container {
+.contacts__list-items {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -324,17 +324,21 @@ h6 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 54px;
 }
 
 .contacts__content {
   width: 220px;
   height: 427px;
   padding: 43px 20px;
-  margin-bottom: 20px;
   background-color: var(--primary-background-color);
   -webkit-box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
           box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
+}
+
+.contacts__content:not(:last-child) {
+  margin-bottom: 20px;
 }
 
 .contacts__subtitle-holder {
@@ -394,7 +398,7 @@ h6 {
 
 .link {
   text-decoration: none;
-  font-family: 'DMSans-Medium', sans-serif;
+  font-family: 'DMSans', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -406,6 +410,31 @@ h6 {
 
 .link:hover, .link:focus {
   color: var(--secondary-text-color-accent);
+}
+
+.contacts__btn {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 44px;
+  width: 161px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 17px;
+  padding-right: 17px;
+}
+
+.contacts__btn--secondary {
+  margin-bottom: 10px;
+}
+
+.contacts__btn-text {
+  font-size: 16px;
+}
+
+.contacts__btn-icon {
+  width: 8px;
+  height: 16px;
+  fill: currentColor;
 }
 
 .footer {
