@@ -13,9 +13,11 @@
   display: flex;
   align-items: center;
   padding-top: 6px;
+  margin-bottom: 137px;
 
   @include for-tablet-up {
     padding-top: 37px;
+    margin-bottom: 15px;
   }
 }
 
@@ -38,8 +40,6 @@
 .hero {
   position: relative;
   z-index: 3;
-
-  padding-top: 137px;
 }
 
 .hero__title {
@@ -142,6 +142,61 @@
   }
 }
 
+.decoration__so-tasty {
+  display: none;
+
+  @include for-tablet-up {
+    display: block;
+    position: absolute;
+    left: 566px;
+    top: 266px;
+    z-index: 4;
+  }
+}
+
+.decoration__circle {
+  display: none;
+
+  @include for-tablet-up {
+    display: block;
+
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    left: 718px;
+    top: 94px;
+    z-index: 1;
+
+    border-radius: 50%;
+
+    background: var(--secondary-text-color);
+  }
+}
+
+.decoration__number {
+  display: none;
+
+  @include for-tablet-up {
+    display: block;
+
+    position: absolute;
+    width: 33px;
+    height: 32px;
+    left: 691px;
+    top: 96px;
+    z-index: 2;
+
+    font-family: 'TitanOne', sans-serif;
+    font-size: 28px;
+    line-height: 1.14;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    color: #d41443;
+    background: hsla(345, 83%, 45%, 0);
+  }
+}
+
 .top-panel__btn-buy {
   display: none;
 
@@ -172,4 +227,33 @@
 
 .top-panel__btn-buy--indent {
   margin-right: 12px;
+}
+
+.hero__description {
+  max-width: 114px;
+
+  font-family: var(--primary-font-family);
+  font-size: 8px;
+  line-height: 1.5;
+
+  color: var(--secondary-text-color);
+}
+
+.hero__block {
+  display: none;
+
+  @include for-tablet-up {
+    display: flex;
+    align-items: flex-end;
+  }
+}
+
+.description__btn {
+  width: 18px;
+  height: 18px;
+  padding: 0;
+
+  @include flex-centered;
+
+  fill: var(--secondary-btn-background-color);
 }
