@@ -13,13 +13,34 @@
     padding-bottom: 165px;
   }
 
-  // @include for-desktop-up {
-  //   background-image: linear-gradient(
-  //       var(--primary-background-color) 102px,
-  //       var(--secondary-background-color) 102px
-  //     ),
-  //     url(../../images/desktop/bg-contacts_desktop.webp);
-  // }
+  @include for-desktop-up {
+    background-image: url(../images/desktop/bg-contacts_desktop.png),
+      linear-gradient(
+        var(--primary-background-color) 102px,
+        var(--secondary-background-color) 102px
+      );
+    background-image: url(../images/desktop/bg-contacts_desktop.webp),
+      linear-gradient(
+        var(--primary-background-color) 102px,
+        var(--secondary-background-color) 102px
+      );
+    background-repeat: no-repeat;
+    background-position: 0px 102px, 0px 0px;
+    background-size: contain;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/desktop/bg-contacts@2x_desktop.png),
+        linear-gradient(
+          var(--primary-background-color) 102px,
+          var(--secondary-background-color) 102px
+        );
+      background-image: url(../images/desktop/bg-contacts@2x_desktop.webp),
+        linear-gradient(
+          var(--primary-background-color) 102px,
+          var(--secondary-background-color) 102px
+        );
+    }
+  }
 }
 
 .contacts__container {
