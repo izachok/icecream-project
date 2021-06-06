@@ -5,7 +5,7 @@
   border: none;
   outline: none;
 
-  font-family: inherit;
+  font-family: 'DMSans';
   font-weight: 700;
   font-size: 14px;
   line-height: 1.28;
@@ -20,21 +20,21 @@
 }
 
 .btn--primary {
-  background-color: #fff;
-  color: #d41443;
+  background-color: var(--primary-btn-background-color);
+  color: var(--secondary-btn-background-color);
 
   &:hover,
   &:focus {
-    background-color: #ecebeb;
+    background-color: var(--primary-btn-backg-color-hover);
   }
 }
 
 .btn--secondary {
-  background-color: #d41443;
-  color: #fff;
+  background-color: var(--secondary-btn-background-color);
+  color: var(--primary-btn-background-color);
 
   &:hover,
   &:focus {
-    background-color: #c7133e;
+    background-color: var(--secondary-btn-backg-color-hover);
   }
 }
