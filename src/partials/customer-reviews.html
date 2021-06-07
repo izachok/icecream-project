@@ -26,31 +26,39 @@
           class="customer-reviews__image"
         />
       </div>
-      <a class="prev" onclick="minusSlide()">&#10094;</a>
-      <a class="next" onclick="plusSlide()">&#10095;</a>
+      <a class="prev sliderPrev">&#10094;</a>
+      <a class="next sliderNext">&#10095;</a>
     </div>
     <div class="slider-dots">
-      <span class="slider-dots_item" onclick="currentSlide(1)"></span>
-      <span class="slider-dots_item" onclick="currentSlide(2)"></span>
-      <span class="slider-dots_item" onclick="currentSlide(3)"></span>
+      <span class="slider-dots_item dots" data-number="1"></span>
+      <span class="slider-dots_item dots" data-number="2"></span>
+      <span class="slider-dots_item dots" data-number="3"></span>
     </div>
     <div class="customer-reviews__text-wrap">
       <div class="customer-reviews__gradient-wrap">
         <p class="customer-reviews__text">
-          Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit
-          nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
+          1 Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In
+          hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
+        </p>
+        <p class="customer-reviews__text">
+          2 Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In
+          hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
+        </p>
+        <p class="customer-reviews__text">
+          3 Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In
+          hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
         </p>
       </div>
     </div>
     <p class="customer-reviews__adress">Emily, Los Angeles</p>
     <div class="customer-reviews__icon-wrap">
-      <svg class="customer-reviews__icon-home" width="12px" height="12px">
+      <svg class="customer-reviews__icon-home dots" width="12px" height="12px" data-number="1">
         <use href="./images/icons.svg#icon-home"></use>
       </svg>
-      <svg class="customer-reviews__icon-circle" width="12px" height="12px">
+      <svg class="customer-reviews__icon-circle dots" width="12px" height="12px" data-number="2">
         <use href="./images/icons.svg#icon-circle"></use>
       </svg>
-      <svg class="customer-reviews__icon-circle" width="12px" height="12px">
+      <svg class="customer-reviews__icon-circle dots" width="12px" height="12px" data-number="3">
         <use href="./images/icons.svg#icon-circle"></use>
       </svg>
     </div>
