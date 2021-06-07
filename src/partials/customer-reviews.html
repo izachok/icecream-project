@@ -1,8 +1,8 @@
 <section id="customer-reviews" class="customer-reviews">
-  <div class="container">
+  <div class="container customer-reviews__container">
     <h2 class="visually-hidden">Customer reviews</h2>
     <div class="slider">
-      <div class="item">
+      <div class="slider__item">
         <img
           src="./images/reviews/curly-woman.jpg"
           alt="Curly woman"
@@ -10,7 +10,7 @@
           class="customer-reviews__image"
         />
       </div>
-      <div class="item">
+      <div class="slider__item">
         <img
           src="./images/reviews/woman-in-glasses.jpg"
           alt="Woman in glasses"
@@ -18,7 +18,7 @@
           class="customer-reviews__image"
         />
       </div>
-      <div class="item">
+      <div class="slider__item">
         <img
           src="./images/reviews/woman-in-yellow.jpg"
           alt="Woman in yellow"
@@ -26,41 +26,49 @@
           class="customer-reviews__image"
         />
       </div>
-      <a class="prev sliderPrev">&#10094;</a>
-      <a class="next sliderNext">&#10095;</a>
-    </div>
-    <div class="slider-dots">
-      <span class="slider-dots_item dots" data-number="1"></span>
-      <span class="slider-dots_item dots" data-number="2"></span>
-      <span class="slider-dots_item dots" data-number="3"></span>
     </div>
     <div class="customer-reviews__text-wrap">
       <div class="customer-reviews__gradient-wrap">
         <p class="customer-reviews__text">
-          1 Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In
-          hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
+          This is delicious! I’m officially hooked. I ate the whole thing in one sitting. It’s both
+          rich and creamy. I bet you can’t eat just one.
         </p>
         <p class="customer-reviews__text">
-          2 Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In
-          hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
+          I ate the whole thing in one sitting. Didn’t plan on doing that but the ice cream taste
+          and the chocolate was too much to stop eating!
         </p>
         <p class="customer-reviews__text">
-          3 Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In
-          hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
+          Lots of nice, thick chocolate - I could really care less about the ice cream, but the
+          chocolate is divine. This stuff is outrageously fattening though. And very habit-forming,
+          so beware!
         </p>
       </div>
     </div>
-    <p class="customer-reviews__adress">Emily, Los Angeles</p>
+    <p class="customer-reviews__address">Emily, Los Angeles</p>
+    <p class="customer-reviews__address">Olga, Kharkiv</p>
+    <p class="customer-reviews__address">Kate, Kairo</p>
     <div class="customer-reviews__icon-wrap">
+      <div class="slider-dots">
+        <span class="slider-dots__item dots" data-number="1"></span>
+        <span class="slider-dots__item dots" data-number="2"></span>
+        <span class="slider-dots__item dots" data-number="3"></span>
+      </div>
+      <a class="slider__prev sliderPrev">&#10094;</a>
       <svg class="customer-reviews__icon-home dots" width="12px" height="12px" data-number="1">
         <use href="./images/icons.svg#icon-home"></use>
       </svg>
       <svg class="customer-reviews__icon-circle dots" width="12px" height="12px" data-number="2">
         <use href="./images/icons.svg#icon-circle"></use>
       </svg>
-      <svg class="customer-reviews__icon-circle dots" width="12px" height="12px" data-number="3">
+      <svg
+        class="customer-reviews__icon-circle customer-reviews__icon-circle--last dots"
+        width="12px"
+        height="12px"
+        data-number="3"
+      >
         <use href="./images/icons.svg#icon-circle"></use>
       </svg>
+      <a class="slider__next sliderNext">&#10095;</a>
     </div>
   </div>
 </section>

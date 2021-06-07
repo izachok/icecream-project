@@ -119,7 +119,7 @@
     }
   }
 }
-.customer-reviews__adress {
+.customer-reviews__address {
   margin-bottom: 30px;
 
   font-family: var(--primary-font-family);
@@ -163,17 +163,25 @@
   }
 }
 .customer-reviews__icon-wrap {
+  position: relative;
   text-align: center;
 }
 .customer-reviews__icon-home {
   fill: var(--slider-icon-color);
   margin-right: 18px;
+  cursor: pointer;
+
+  transition: fill 0.6s ease;
 }
 .customer-reviews__icon-circle {
-  fill: #d9d9d9;
-}
-.customer-reviews__icon-circle:not(:last-child) {
   margin-right: 18px;
+
+  fill: #d9d9d9;
+  cursor: pointer;
+  transition: fill 0.6s ease;
+}
+.customer-reviews__icon-circle--last {
+  margin-right: 0px;
 }
 
 // Slider
@@ -183,7 +191,7 @@
   margin: auto;
   margin-bottom: 15px;
 }
-.slider .item {
+.slider__item {
   margin-bottom: 29px;
   margin-left: auto;
   margin-right: auto;
@@ -198,64 +206,43 @@
     margin-bottom: 15px;
   }
 }
-/* Кнопки вперед и назад */
-.slider .prev,
-.slider .next {
+.slider__prev,
+.slider__next {
   cursor: pointer;
   position: absolute;
-  top: 0;
   top: 50%;
   width: auto;
-  margin-top: -22px;
+  margin-top: -25px;
   padding: 16px;
-  color: rgb(199, 131, 131);
+  color: var(--social-btn-backg-color);
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
+  border-radius: 50%;
 }
-.slider .next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
+.slider__prev {
+  left: 30%;
+
+  @include for-responsive-only {
+    left: 15%;
+  }
+}
+.slider__next {
+  right: 30%;
+
+  @include for-responsive-only {
+    right: 15%;
+  }
 }
 /* При наведении на кнопки добавляем фон кнопок */
-.slider .prev:hover,
-.slider .next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-.slider-dots__item {
-  cursor: pointer;
-  height: 12px;
-  width: 12px;
-  margin: 0 2px;
-  background-color: #ddd;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-.active,
-.slider-dots__item:hover {
-  background-color: #aaa;
-}
-.slider-dots {
-  text-align: center;
-}
-.slider-dots_item {
-  cursor: pointer;
-  height: 12px;
-  width: 12px;
-  margin: 0 2px;
-  background-color: #ddd;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-.active,
-.slider-dots_item:hover {
-  background-color: #aaa;
+.slider__prev:hover,
+.slider__next:hover {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 /* Анимация слайдов */
-.slider .item {
+.slider__item,
+.customer-reviews__address,
+.customer-reviews__text {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
   animation-name: fade;

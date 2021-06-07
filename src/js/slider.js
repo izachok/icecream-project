@@ -1,13 +1,12 @@
- /* Индекс слайда по умолчанию */
 var slideIndex = 1;
 showSlides(slideIndex);
 
-/* Основная функция слайдера */
 function showSlides(n) {
     var i;
-    var slides = document.getElementsByClassName("item");
-    var dots = document.getElementsByClassName("slider-dots_item");
+    var slides = document.getElementsByClassName("slider__item");
+    var dots = document.getElementsByClassName("slider-dots__item");
     var text = document.getElementsByClassName("customer-reviews__text");
+    var address = document.getElementsByClassName("customer-reviews__address");
     if (n > slides.length) {
       slideIndex = 1
     }
@@ -17,12 +16,14 @@ function showSlides(n) {
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
         text[i].style.display = "none";
+       address[i].style.display = "none";
     }
     for (i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(" active", "");
     }
     slides[slideIndex - 1].style.display = "block";
     text[slideIndex - 1].style.display = "block";
+    address[slideIndex - 1].style.display = "block";
     dots[slideIndex - 1].className += " active";
 }
 
