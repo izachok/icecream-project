@@ -171,13 +171,18 @@
   }
 }
 .about__btn {
-  max-width: 176px;
+  display: flex;
+  min-width: 176px;
   height: 44px;
-  justify-content: space-between;
+  font-size: 14px;
+  @include for-tablet-up {
+    font-size: 16px;
+  }
 }
 .btn__arrow {
+  display: block;
+  margin-left: 13px;
   fill: var(--secondary-btn-background-color);
   width: 10px;
   height: 10px;
-  display: flex;
 }

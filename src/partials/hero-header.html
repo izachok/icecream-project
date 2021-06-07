@@ -1,16 +1,41 @@
 <header id="hero-header" class="hero-header">
-  <div class="container">
+  <div class="container hero-header__container">
     <div class="top-panel">
-      <a href="./index.html" class="link"><img src="./images/logo/logo.png" width="199" height="50"
-          alt="logo icecream" /></a>
-
-      <button type="button" class="btn top-panel__btn" aria-expanded="true" data-menu-button>
-        <svg width="20" height="12" class="top-panel__icon-menu" aria-label="Переключатель мобильного меню">
+      <a href="./index.html" class="logo">
+        <img src="./images/logo/logo.png" width="199" height="50" alt="logo ice cream" />
+      </a>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link nav__link--current" href="./index.html">Home</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#customer-reviews">About us</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#about">How it’s made?</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#products">Our products</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#contacts">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <button type="button" class="btn top-panel__btn" aria-expanded="false" data-menu-button>
+        <svg
+          width="20"
+          height="12"
+          class="top-panel__icon-menu"
+          aria-label="Переключатель мобильного меню"
+        >
           <use href="./images/icons.svg#icon-menu"></use>
         </svg>
       </button>
       <button type="button" class="btn top-panel__btn-buy">
-        <span class="top-panel__btn-buy--indent">Buy now</span><svg width="8" height="18" class="top-panel__icon-menu">
+        <span class="top-panel__btn-buy--indent">Buy now</span
+        ><svg width="8" height="18" class="top-panel__icon-menu">
           <use href="./images/icons.svg#icon-arrow"></use>
         </svg>
       </button>
@@ -19,10 +44,104 @@
 
       <div class="decoration">
         <div class="decoration__ellipse"></div>
-        <img src="./images/mobile/ice-cream-cone_mobile.png" alt="icecream" width="171" height="410"
-          class="decoration__icecream-cone" />
-        <img src="./images/tablet/so-tasty_tablet.png" alt="so-tasty" width="168" height="133"
-          class="decoration__so-tasty" />
+        <picture>
+          <source
+            srcset="
+              ./images/desktop/ice-cream-cone_desktop.webp    1x,
+              ./images/desktop/ice-cream-cone@2x_desktop.webp 2x
+            "
+            media="(min-width: 1200px)"
+            type="image/webp"
+          />
+          <source
+            srcset="
+              ./images/tablet/ice-cream-cone_tablet.webp    1x,
+              ./images/tablet/ice-cream-cone@2x_tablet.webp 2x
+            "
+            media="(min-width: 768px)"
+            type="image/webp"
+          />
+          <source
+            srcset="
+              ./images/mobile/ice-cream-cone_mobile.webp    1x,
+              ./images/mobile/ice-cream-cone@2x_mobile.webp 2x
+            "
+            media="(max-width: 767px)"
+            type="image/webp"
+          />
+          <source
+            srcset="
+              ./images/desktop/ice-cream-cone_desktop.png    1x,
+              ./images/desktop/ice-cream-cone@2x_desktop.png 2x
+            "
+            media="(min-width: 1200px)"
+            type="image/png"
+          />
+          <source
+            srcset="
+              ./images/tablet/ice-cream-cone_tablet.png    1x,
+              ./images/tablet/ice-cream-cone@2x_tablet.png 2x
+            "
+            media="(min-width: 768px)"
+            type="image/png"
+          />
+          <source
+            srcset="
+              ./images/mobile/ice-cream-cone_mobile.png    1x,
+              ./images/mobile/ice-cream-cone@2x_mobile.png 2x
+            "
+            media="(max-width: 767px)"
+            type="image/png"
+          />
+          <img
+            src="./images/mobile/ice-cream-cone_mobile.png"
+            alt="icecream"
+            width="171"
+            height="410"
+            class="decoration__icecream-cone"
+          />
+        </picture>
+        <picture>
+          <source
+            srcset="
+              ./images/desktop/so-tasty_desktop.webp    1x,
+              ./images/desktop/so-tasty@2x_desktop.webp 2x
+            "
+            media="(min-width: 1200px)"
+            type="image/webp"
+          />
+          <source
+            srcset="
+              ./images/tablet/so-tasty_tablet.webp    1x,
+              ./images/tablet/so-tasty@2x_tablet.webp 2x
+            "
+            media="(min-width: 768px)"
+            type="image/webp"
+          />
+          <source
+            srcset="
+              ./images/desktop/so-tasty_desktop.png    1x,
+              ./images/desktop/so-tasty@2x_desktop.png 2x
+            "
+            media="(min-width: 1200px)"
+            type="image/png"
+          />
+          <source
+            srcset="
+              ./images/tablet/so-tasty_tablet.png    1x,
+              ./images/tablet/so-tasty@2x_tablet.png 2x
+            "
+            media="(min-width: 768px)"
+            type="image/png"
+          />
+          <img
+            src="./images/tablet/so-tasty_tablet.png"
+            alt="so-tasty"
+            width="168"
+            height="133"
+            class="decoration__so-tasty"
+          />
+        </picture>
         <div class="decoration__circle"></div>
         <p class="decoration__number">16</p>
         <p class="decoration__text">cafes</p>
@@ -39,21 +158,50 @@
       </h1>
       <ul class="hero__btn">
         <li class="hero__item">
-          <a href="#products" class="link hero__link">Products</a>
+          <a href="#products" class="hero__link">Products</a>
         </li>
         <li class="hero__item hero__item--indent">
-          <a href="#about" class="link hero__link hero__link--color">How it’s made?</a>
+          <a href="#about" class="hero__link hero__link--color">How it’s made?</a>
         </li>
       </ul>
       <div class="hero__block">
-        <img src="./images/tablet/milk_tablet.png" alt="milk" width="124" height="126" />
+        <picture>
+          <source
+            srcset="./images/desktop/milk_desktop.webp 1x, ./images/desktop/milk@2x_desktop.webp 2x"
+            media="(min-width: 1200px)"
+            type="image/webp"
+          />
+          <source
+            srcset="./images/tablet/milk_tablet.webp 1x, ./images/tablet/milk@2x_tablet.webp 2x"
+            media="(min-width: 768px)"
+            type="image/webp"
+          />
+          <source
+            srcset="./images/desktop/milk_desktop.png 1x, ./images/desktop/milk@2x_desktop.png 2x"
+            media="(min-width: 1200px)"
+            type="image/png"
+          />
+          <source
+            srcset="./images/tablet/milk_tablet.png 1x, ./images/tablet/milk@2x_tablet.png 2x"
+            media="(min-width: 768px)"
+            type="image/png"
+          />
+          <img
+            src="./images/tablet/milk_tablet.png"
+            alt="milk"
+            width="124"
+            height="126"
+            class="block__milk"
+          />
+        </picture>
+
         <div class="hero-block--position">
           <p class="hero__description">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
             incididunt ut labore et
           </p>
           <button type="button" class="btn description__btn">
-            <svg width="8" height="8" class="">
+            <svg width="8" height="8" class="description__icon">
               <use href="./images/icons.svg#icon-arrow-right"></use>
             </svg>
           </button>

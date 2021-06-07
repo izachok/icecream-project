@@ -9,6 +9,7 @@ document.addEventListener(
         var m_ID = target.getAttribute('data-target');
         document.getElementById(m_ID).classList.add('open');
         e.preventDefault();
+        document.body.classList.toggle('modal-open');
       }
     }
 
@@ -20,6 +21,7 @@ document.addEventListener(
       var modal = document.querySelector('[class="modal open"]');
       modal.classList.remove('open');
       e.preventDefault();
+      document.body.classList.toggle('modal-open');
     }
   },
   false,
