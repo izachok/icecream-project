@@ -14,14 +14,7 @@
 .hero-header__container {
   position: relative;
 
-  height: 502px;
-
-  @include for-tablet-up {
-    height: 399px;
-  }
-
   @include for-desktop-up {
-    height: 665px;
     width: 1280px;
   }
 }

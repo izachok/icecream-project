@@ -49,14 +49,14 @@
     padding-right: 50px;
   }
 
-  @include for-tablet-up {
-    padding-left: 34px;
-    padding-right: 34px;
-  }
+  // @include for-tablet-up {
+  //   padding-left: 34px;
+  //   padding-right: 34px;
+  // }
 
   @include for-desktop-up {
-    padding-left: 115px;
-    padding-right: 115px;
+    // padding-left: 115px;
+    // padding-right: 115px;
   }
 }
 
@@ -70,18 +70,19 @@
   }
 
   @include for-tablet-up {
-    @include elements-set;
+    @include elements-set($column-tablet-gap);
     margin-bottom: 81px;
   }
 
   @include for-desktop-up {
+    @include elements-set;
     margin-bottom: 86px;
   }
 }
 
 .contacts__content {
   min-width: 220px;
-  height: 427px;
+  // height: 427px;
   padding: 43px 20px;
 
   background-color: var(--primary-background-color);
@@ -89,18 +90,16 @@
   border-radius: 24px;
 
   @include for-tablet-up {
-    @include element;
-    flex-basis: get-column-basis(3);
+    @include element($column-tablet-gap);
+    min-width: 0;
+    flex-basis: get-column-basis(3, $gap: $column-tablet-gap);
 
-    width: 220px;
-    height: 544px;
     padding: 50px 31px;
-    // margin-right: $column-tablet-gap;
   }
 
   @include for-desktop-up {
-    width: 330px;
-    height: 572px;
+    @include element;
+    flex-basis: get-column-basis(3);
     padding: 62px 43px;
   }
 }
@@ -108,14 +107,6 @@
 .contacts__content:not(:last-child) {
   @include for-phone-only {
     margin-bottom: 20px;
-  }
-
-  @include for-tablet-up {
-    margin-right: $column-tablet-gap;
-  }
-
-  @include for-desktop-up {
-    margin-right: $column-gap;
   }
 }
 
