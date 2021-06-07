@@ -1,7 +1,7 @@
 .mobile-menu {
   &__container {
     position: fixed;
-    top: 0;
+    top: 0%;
     right: 0%;
     z-index: 50;
     width: 100vw;
@@ -28,6 +28,7 @@
   }
 
   &__btn-buy {
+    display: flex;
     justify-content: center;
     padding: 11px 45px;
     width: 100%;
@@ -36,6 +37,8 @@
     font-style: normal;
     font-weight: 700;
     line-height: 1.31;
+    border: none;
+    border-radius: 22px;
     background-color: var(--secondary-text-color);
     color: var(--secondary-btn-background-color);
     fill: currentColor;
@@ -80,8 +83,6 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 13.5px;
-    height: 14px;
     padding: 0px;
     background-color: transparent;
     border: none;
@@ -90,33 +91,42 @@
   }
 
   &__btn-close {
-    position: fixed;
+    position: absolute;
     top: 23px;
     right: 28px;
     background-color: transparent;
     padding: 0;
+    border: none;
+  }
+
+  &__icon-close {
+    width: 14px;
+    height: 14px;
+    background-color: transparent;
+    padding: 0;
+    fill: #ffffff;
   }
 
   &__btn.is-open &__icon-menu {
     @include for-tablet-down {
-      display: block;
+      display: none;
     }
   }
 
   &__btn.is-open &__icon-close {
-    display: none;
+    display: block;
   }
 
   &__btn &__icon-close {
-    display: block;
+    display: none;
   }
 
   &__btn &__icon-menu {
     display: none;
   }
 
-  &__icon-close {
-    fill: #ffffff;
+  &__container &__icon-close {
+    display: block;
   }
 }
 
