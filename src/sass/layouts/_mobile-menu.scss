@@ -1,8 +1,8 @@
 .mobile-menu {
   &__container {
     position: fixed;
-    top: 0%;
-    right: 0%;
+    top: 0;
+    right: 0;
     z-index: 50;
     width: 100vw;
     height: 100vh;
@@ -15,7 +15,7 @@
     transition: get-transition-prop(transform);
 
     &.is-open {
-      transform: translateX(100%) translateY(0%);
+      transform: translateX(100%);
     }
 
     @include for-tablet-up {
