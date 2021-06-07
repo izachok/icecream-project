@@ -5,18 +5,18 @@
   margin-right: auto;
 
   @include for-phone-up {
-    width: var(--mobile-width);
+    width: $mobile-width;
   }
 
   @include for-tablet-up {
-    width: var(--tablet-width);
+    width: $tablet-width;
     padding-left: 36px;
     padding-right: 36px;
   }
 
   @include for-desktop-up {
-    width: var(--desktop-width);
-    padding-left: 115px;
-    padding-right: 115px;
+    width: $desktop-width;
+    padding-left: 75px;
+    padding-right: 75px;
   }
 }

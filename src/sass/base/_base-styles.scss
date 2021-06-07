@@ -1,5 +1,5 @@
 body {
-  font-family: var(--primary-font-family), sans-serif;
+  font-family: var(--primary-font-family);
   color: var(--primary-text-color);
   &.modal-open {
     overflow: hidden;
@@ -13,7 +13,6 @@ ul {
 a {
   text-decoration: none;
   font-style: normal;
-  //color: $accent-color;
 }
 p {
   margin: 0;
