@@ -62,7 +62,7 @@
   }
 
   @include for-desktop-up {
-    @include elements-set($gap: 30px);
+    @include elements-set;
   }
 }
 
@@ -84,8 +84,8 @@
   }
 
   @include for-desktop-up {
-    @include element($gap: 30px);
-    flex-basis: get-column-basis(3, $gap: 30px);
+    @include element;
+    flex-basis: get-column-basis(3);
   }
 
   &::before {
