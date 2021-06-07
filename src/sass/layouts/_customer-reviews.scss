@@ -1,3 +1,10 @@
+.customer-reviews__container {
+  @include for-desktop-up {
+    padding-left: 136px;
+    padding-right: 136px;
+  }
+}
+
 .customer-reviews {
   padding-top: 80px;
   padding-bottom: 86px;

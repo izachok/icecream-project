@@ -5,18 +5,16 @@
   border: none;
   outline: none;
 
-  font-family: 'DMSans';
+  font-family: var(--primary-font-family);
   font-weight: 700;
   font-size: 14px;
   line-height: 1.28;
 
-  display: flex;
-  align-items: center;
-  text-align: center;
+  @include flex-centered;
 
   cursor: pointer;
 
-  transition: background-color $animation-time $animation-function;
+  transition: get-transition-prop(background-color);
 }
 
 .btn--primary {

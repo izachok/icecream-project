@@ -4,14 +4,14 @@
 }
 
 //set container for flex grid
-@mixin elements-set($gap: var(--column-gap)) {
+@mixin elements-set($gap: $column-gap) {
   display: flex;
   flex-wrap: wrap;
   margin: $gap / -2;
 }
 
 //set margin for flex grid elements
-@mixin element($gap: var(--column-gap)) {
+@mixin element($gap: $column-gap) {
   margin: $gap / 2;
 }
 

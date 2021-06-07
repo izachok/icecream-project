@@ -1,53 +1,90 @@
 .advantages {
   background-color: var(--secondary-background-color);
   padding-bottom: 97px;
-}
 
-.advantages {
-  // .advantages__container
-
-  &__container {
+  @include for-tablet-up {
+    padding-bottom: 140px;
   }
 }
 
 .advantages-list {
   margin-bottom: -38px;
+  padding-left: 0;
+  padding-right: 0;
 
-  // .advantages-list__item
-  &__item {
-    width: 230px;
-    margin-bottom: 38px;
+  @include for-tablet-up {
+    display: flex;
+    @include elements-set(60px);
   }
 
-  &__item::before {
+  @include for-desktop-up {
+    @include elements-set;
+  }
+}
+
+.advantages-list__item {
+  width: 230px;
+  margin-bottom: 38px;
+
+  @include for-tablet-up {
+    @include element(60px);
+    flex-basis: get-column-basis(3, $gap: 60px);
+  }
+
+  @include for-desktop-up {
+    flex-basis: get-column-basis(3);
+    @include element;
+  }
+
+  &::before {
     display: block;
     content: '';
     height: 50px;
-    // background-size: auto;
     background-repeat: no-repeat;
     background-position: left;
-    // background-color: var(--primary-background-color);
     margin-bottom: 16px;
-    // margin-right: auto;
+
+    @include for-tablet-up {
+      margin-bottom: 36px;
+    }
+
+    @include for-desktop-up {
+      margin-bottom: 40px;
+    }
+  }
+}
+
+.advantages-list__text {
+  line-height: 1.7;
+  color: var(--block-title-color);
+
+  @include for-tablet-up {
+    line-height: 1.74;
   }
 
-  // .advantages-list__title
+  @include for-desktop-up {
+    line-height: 1.76;
+  }
+}
 
-  &__title {
-    font-family: var(--secondary-font-family);
-    font-style: normal;
-    font-weight: normal;
-    font-size: 36px;
-    line-height: 1.139;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
+.advantages-list__title {
+  font-family: var(--secondary-font-family);
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.139;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  @include for-tablet-up {
+    font-size: 48px;
+    line-height: 1.146;
+    margin-bottom: 13px;
   }
 
-  // .advantages-list__text
-
-  &__text {
-    line-height: 1.7;
-    color: var(--block-title-color);
+  @include for-desktop-up {
+    font-size: 58px;
+    line-height: 1.138;
+    margin-bottom: 15px;
   }
 }
 
