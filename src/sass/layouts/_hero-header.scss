@@ -78,7 +78,7 @@
 .hero__title {
   margin-bottom: 20px;
 
-  font-size: 26px;
+  font-size: 22px;
   line-height: 1.15;
   color: var(--secondary-text-color);
   letter-spacing: 0.04em;
@@ -91,7 +91,7 @@
 }
 
 .hero__title--accent {
-  font-size: 48px;
+  font-size: 34px;
   line-height: 0.96;
   color: var(--primary-section-title-color);
 
@@ -105,7 +105,6 @@
 .hero__btn {
   display: flex;
   margin-bottom: 20px;
-
   @include for-desktop-up {
     margin-bottom: 56px;
   }
@@ -364,7 +363,7 @@
 
     padding: 11px 32px;
 
-    font-family: DMSans-Bold;
+    font-weight: 700;
     font-size: 16px;
     line-height: 1.31;
 
@@ -410,8 +409,10 @@
 }
 
 .description__icon {
-  width: 16px;
-  height: 16px;
+  @include for-desktop-up {
+    width: 16px;
+    height: 12px;
+  }
 }
 
 .hero__block {
