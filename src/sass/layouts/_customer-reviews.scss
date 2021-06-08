@@ -278,13 +278,13 @@
 .slider__prev,
 .slider__next {
   -webkit-animation-name: fade;
-  -webkit-animation-duration: 0.8s;
+  -webkit-animation-duration: 1.5s;
   animation-name: fade;
-  animation-duration: 0.8s;
+  animation-duration: 1.5s;
 }
 @-webkit-keyframes fade {
   from {
-    opacity: 0.6;
+    opacity: 0.4;
   }
   to {
     opacity: 1;
@@ -292,7 +292,7 @@
 }
 @keyframes fade {
   from {
-    opacity: 0.6;
+    opacity: 0.4;
   }
   to {
     opacity: 1;
