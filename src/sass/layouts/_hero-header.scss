@@ -481,3 +481,11 @@
 .nav__link--current {
   color: var(--secondary-btn-background-color);
 }
+
+.filler {
+  background-color: #0b3553;
+  border: 1px solid #022238;
+  opacity: 0.8;
+  height: 25vh;
+  width: 99vw; //FIXME: 100vw make a scrollbar appear :'(
+}
