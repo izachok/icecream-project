@@ -161,45 +161,50 @@
         <form>
           <div class="contacts__contact-form">
             <label>
-              <span class="text">Name</span>
-              <input type="text" name="user-name" class="contacts__form-field" />
-              <svg class="contact-form__icon-svg">
+              <span class="contacts__form-text text">Name</span>
+              <input type="text" name="user-name" autocomplete="off" class="contacts__form-field" />
+              <svg class="contacts__icon-svg">
                 <use href="./images/icon-modal.svg#icon-person-black"></use>
               </svg>
             </label>
           </div>
           <div class="contacts__contact-form">
             <label>
-              <span class="text">Phone number</span>
-              <input type="tel" name="user-phone" class="contacts__form-field" />
-              <svg class="contact-form__icon-svg">
+              <span class="contacts__form-text text">Phone number</span>
+              <input type="tel" name="user-phone" autocomplete="off" class="contacts__form-field" />
+              <svg class="contacts__icon-svg">
                 <use href="./images/icon-modal.svg#icon-phone-black"></use>
               </svg>
             </label>
           </div>
           <div class="contacts__contact-form">
             <label>
-              <span class="text">Email</span>
+              <span class="contacts__form-text text">Email</span>
               <input
                 type="email"
                 name="user-email"
-                autocomplete="nope"
+                autocomplete="off"
                 class="contacts__form-field"
               />
-              <svg class="contact-form__icon-svg">
+              <svg class="contacts__icon-svg">
                 <use href="./images/icon-modal.svg#icon-email-black"></use>
               </svg>
             </label>
           </div>
           <label>
-            <span class="text">Message</span>
+            <span class="contacts__form-text text">Message</span>
             <textarea
-              class="contacts__form-field contact-form__message"
+              class="contacts__form-field contacts__form-message"
               name="user-message"
               placeholder="Type text"
             ></textarea>
           </label>
-          <button class="btn modal__btn" type="submit">Send</button>
+          <button class="btn btn--secondary contacts__btn contacts__modal-btn" type="submit">
+            <span class="contacts__btn-text">Send</span>
+            <svg class="contacts__btn-icon" width="10" height="20">
+              <use href="./images/icons.svg#icon-arrow"></use>
+            </svg>
+          </button>
         </form>
         <div class="modal-location__wrap"></div>
       </div>
