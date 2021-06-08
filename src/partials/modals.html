@@ -20,70 +20,159 @@
     </button>
     <!-- add markup for hero modal here -->
     <div class="modal-hero__wrap">
-      <p>Modal for click on Buy now on Hero</p>
+      <div class="modal-hero__img-thumb">
+        <picture>
+          <source
+            media="(min-width:1200px)"
+            srcset="./images/desktop/cow_desktop.webp 1x, ./images/desktop/cow@2x_desktop.webp 2x"
+            type="image/webp"
+          />
+          <source
+            media="(min-width:768px)"
+            srcset="./images/tablet/cow_tablet.webp 1x, ./images/tablet/cow@2x_tablet.webp 2x"
+            type="image/webp"
+          />
+          <source
+            media="(max-width:767px)"
+            srcset="./images/mobile/cow_mobile.webp 1x, ./images/mobile/cow@2x_mobile.webp 2x"
+            type="image/webp"
+          />
+          <source
+            media="(min-width:1200px)"
+            srcset="./images/desktop/cow_desktop.png 1x, ./images/desktop/cow@2x_desktop.png 2x"
+            type="image/png"
+          />
+          <source
+            media="(min-width:768px)"
+            srcset="./images/tablet/cow_tablet.png 1x, ./images/tablet/cow@2x_tablet.png 2x"
+            type="image/png"
+          />
+          <source
+            media="(max-width:767px)"
+            srcset="./images/mobile/cow_mobile.png 1x, ./images/mobile/cow@2x_mobile.png 2x"
+            type="image/png"
+          />
+          <img src="./images/mobile/cow_mobile.png" alt="Cow with milk" />
+        </picture>
+        </div>
+        <div class="modal-hero__speech speech">
+<div class="speech__circle--small circle"></div>
+<div class="speech__circle--middle circle"></div>
+<div class="speech__circle--large circle"></div>
+     <div class="speech__circle--lagest circle">   
+        <p class="modal-hero__lable">became happy</p>
+        <h3 class="modal-hero__title">buy it now!</h3>
+        </div>
+</div>
+        <label for="goods" class="modal-hero__goods-choice input-lable">Choose the best one</label>
+        <select id="goods" class="modal-hero__select">
+          <option class="input-lable__option">Ice cream</option>
+          <option class="input-lable__option">Ice coffee</option>
+          <option class="input-lable__option">Milkshake</option>
+        </select>
+
+        <label for="locations" class="modal-hero__locations-choice input-lable">Where will you get it?</label>
+        <select id="locations" class="modal-hero__select">
+          <option class="input-lable__option">Chicago</option>
+          <option class="input-lable__option">Los Angeles</option>
+          <option class="input-lable__option">New York</option>
+        </select>
+
+  <form name="datetime" autocomplete="on" novalidate>
+  <label class="input-lable">
+    Enter a date and time:
+    <input type="text" name="datetime" placeholder="06:00 AM 2021-06-10" class="modal-hero__input" />
+  </label>
+  </form>
+<div class="modal-hero__icons">
+  <svg class="modal-hero-icons__svg">
+              <use href="./images/icons.svg#icon-icecream"></use>
+            </svg>
+            <svg class="modal-hero-icons__svg">
+              <use href="./images/icons.svg#icon-milkshake"></use>
+            </svg>
+            <svg class="modal-hero-icons__svg">
+              <use href="./images/icons.svg#icon-coffee"></use>
+            </svg>
+            
+</div>
+<div class="modal-hero__delivery">
+  <button type="button" class="modal-hero__delivery-btn btn btn--primary">Order delivery</button>
+  <svg class="modal-hero__delivery-svg">
+              <use href="./images/icons.svg#icon-delivery"></use>
+            </svg>
+
+</div>
+<button type="button" class="modal-hero__order-btn btn btn--secondary">Make an order</button>
+      </div>
     </div>
   </div>
-</div>
 
-<!-- modal for About Read more -->
-<div id="modal-about" class="modal">
-  <div class="modal-window">
-    <button type="button" class="modal-window__close" aria-label="close" data-dismiss="modal">
-      <svg
-        class="modal-window__icon"
-        data-dismiss="modal"
-        width="14"
-        height="14"
-        aria-hidden="true"
-      >
-        <use href="./images/icons.svg#icon-close"></use>
-      </svg>
-    </button>
-    <!-- add markup for about modal here -->
-    <div class="modal-about__wrap">
-      <p>Modal for click on Read more in About</p>
+  <!--  -->
+  <!--  -->
+  <!--  -->
+  <!--  -->
+  <!--  -->
+  <!-- modal for About Read more -->
+  <div id="modal-about" class="modal">
+    <div class="modal-window">
+      <button type="button" class="modal-window__close" aria-label="close" data-dismiss="modal">
+        <svg
+          class="modal-window__icon"
+          data-dismiss="modal"
+          width="14"
+          height="14"
+          aria-hidden="true"
+        >
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <!-- add markup for about modal here -->
+      <div class="modal-about__wrap">
+        <p>Modal for click on Read more in About</p>
+      </div>
     </div>
   </div>
-</div>
 
-<!-- modal for Contacts Our locations -->
-<div id="modal-location" class="modal">
-  <div class="modal-window">
-    <button type="button" class="modal-window__close" aria-label="close" data-dismiss="modal">
-      <svg
-        class="modal-window__icon"
-        data-dismiss="modal"
-        width="14"
-        height="14"
-        aria-hidden="true"
-      >
-        <use href="./images/icons.svg#icon-close"></use>
-      </svg>
-    </button>
-    <!-- add markup for locations modal here -->
-    <div class="modal-location__wrap">
-      <p>Modal for click on Our Locations in Contacts</p>
+  <!-- modal for Contacts Our locations -->
+  <div id="modal-location" class="modal">
+    <div class="modal-window">
+      <button type="button" class="modal-window__close" aria-label="close" data-dismiss="modal">
+        <svg
+          class="modal-window__icon"
+          data-dismiss="modal"
+          width="14"
+          height="14"
+          aria-hidden="true"
+        >
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <!-- add markup for locations modal here -->
+      <div class="modal-location__wrap">
+        <p>Modal for click on Our Locations in Contacts</p>
+      </div>
     </div>
   </div>
-</div>
 
-<!-- modal for Contacts Franchise -->
-<div id="modal-franchise" class="modal">
-  <div class="modal-window">
-    <button type="button" class="modal-window__close" aria-label="close" data-dismiss="modal">
-      <svg
-        class="modal-window__icon"
-        data-dismiss="modal"
-        width="14"
-        height="14"
-        aria-hidden="true"
-      >
-        <use href="./images/icons.svg#icon-close"></use>
-      </svg>
-    </button>
-    <!-- add markup for Franchise modal here -->
-    <div class="modal-location__wrap">
-      <p>Modal for click on Franchise in Contacts</p>
+  <!-- modal for Contacts Franchise -->
+  <div id="modal-franchise" class="modal">
+    <div class="modal-window">
+      <button type="button" class="modal-window__close" aria-label="close" data-dismiss="modal">
+        <svg
+          class="modal-window__icon"
+          data-dismiss="modal"
+          width="14"
+          height="14"
+          aria-hidden="true"
+        >
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <!-- add markup for Franchise modal here -->
+      <div class="modal-location__wrap">
+        <p>Modal for click on Franchise in Contacts</p>
+      </div>
     </div>
   </div>
 </div>
