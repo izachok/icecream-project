@@ -35,6 +35,8 @@
   }
 }
 .customer-reviews__text-wrap {
+  position: relative;
+
   margin-bottom: 30px;
   padding: 45px 62px 25px 62px;
 
@@ -175,7 +177,7 @@
 }
 .customer-reviews__icon-home {
   display: inline-block;
-  width: 12px;
+  width: 13.1px;
   height: 12px;
 
   background-image: url('/images/Home.svg');
@@ -239,17 +241,24 @@
   border-radius: 50%;
 }
 .slider__prev {
-  left: 30%;
+  left: -5%;
 
   @include for-responsive-only {
-    left: 15%;
+    left: 0;
+  }
+  @include for-tablet-down {
+    left: 2%;
   }
 }
 .slider__next {
-  right: 30%;
+  right: -5%;
 
   @include for-responsive-only {
-    right: 15%;
+    right: 0;
+  }
+
+  @include for-tablet-down {
+    right: 3%;
   }
 }
 /* При наведении на кнопки добавляем фон кнопок */
