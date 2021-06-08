@@ -186,3 +186,41 @@
   width: 10px;
   height: 10px;
 }
+
+.modal-about__img {
+  display: none;
+  @include for-tablet-up {
+    display: block;
+    width: 143px;
+  }
+  @include for-desktop-up {
+    width: 236px;
+  }
+}
+.modal-about__position {
+  @include flex-centered;
+}
+.modal-about__text {
+  margin: 10px;
+  line-height: 1.94;
+
+  @include for-tablet-up {
+    font-size: 14px;
+    margin: 20px;
+    max-width: 50%;
+  }
+  @include for-desktop-up {
+    margin: 40px;
+    font-size: 16px;
+  }
+}
+.modal-about__title {
+  margin-bottom: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--secondary-btn-background-color);
+}
+.modal-about__text--accent {
+  color: var(--secondary-btn-background-color);
+  font-weight: bold;
+}
