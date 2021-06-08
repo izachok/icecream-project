@@ -132,11 +132,77 @@
         <use href="./images/icons.svg#icon-arrow"></use>
       </svg>
     </button>
-    <button class="btn btn--primary contacts__btn contacts__btn--primary" type="button">
+    <button
+      class="btn btn--primary contacts__btn contacts__btn--primary"
+      type="button"
+      data-target="modal-franchise"
+      data-toggle="modal"
+    >
       <span class="contacts__btn-text">Franchise</span>
       <svg class="contacts__btn-icon" width="10" height="20">
         <use href="./images/icons.svg#icon-arrow"></use>
       </svg>
     </button>
+    <div id="modal-franchise" class="modal">
+      <div class="modal-window">
+        <button type="button" class="modal-window__close" aria-label="close" data-dismiss="modal">
+          <svg
+            class="modal-window__icon"
+            data-dismiss="modal"
+            width="14"
+            height="14"
+            aria-hidden="true"
+          >
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <!-- add markup for Franchise modal here -->
+        <h3 class="title title--primary">Contact us</h3>
+        <form>
+          <div class="contacts__contact-form">
+            <label>
+              <span class="text">Name</span>
+              <input type="text" name="user-name" class="contacts__form-field" />
+              <svg class="contact-form__icon-svg">
+                <use href="./images/icon-modal.svg#icon-person-black"></use>
+              </svg>
+            </label>
+          </div>
+          <div class="contacts__contact-form">
+            <label>
+              <span class="text">Phone number</span>
+              <input type="tel" name="user-phone" class="contacts__form-field" />
+              <svg class="contact-form__icon-svg">
+                <use href="./images/icon-modal.svg#icon-phone-black"></use>
+              </svg>
+            </label>
+          </div>
+          <div class="contacts__contact-form">
+            <label>
+              <span class="text">Email</span>
+              <input
+                type="email"
+                name="user-email"
+                autocomplete="nope"
+                class="contacts__form-field"
+              />
+              <svg class="contact-form__icon-svg">
+                <use href="./images/icon-modal.svg#icon-email-black"></use>
+              </svg>
+            </label>
+          </div>
+          <label>
+            <span class="text">Message</span>
+            <textarea
+              class="contacts__form-field contact-form__message"
+              name="user-message"
+              placeholder="Type text"
+            ></textarea>
+          </label>
+          <button class="btn modal__btn" type="submit">Send</button>
+        </form>
+        <div class="modal-location__wrap"></div>
+      </div>
+    </div>
   </div>
 </section>
