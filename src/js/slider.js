@@ -7,8 +7,6 @@ function showSlides(n) {
 
   var slides = sliderContainer.querySelectorAll('.slider__item');
   var dots = sliderContainer.querySelectorAll('.slider-dots__item');
-  var text = sliderContainer.querySelectorAll('.customer-reviews__text');
-  var address = sliderContainer.querySelectorAll('.customer-reviews__address');
 
   if (n > slides.length) {
     slideIndex = 1;
@@ -20,8 +18,6 @@ function showSlides(n) {
 
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = 'none';
-    text[i].style.display = 'none';
-    address[i].style.display = 'none';
   }
 
   for (i = 0; i < dots.length; i++) {
@@ -29,8 +25,6 @@ function showSlides(n) {
   }
 
   slides[slideIndex - 1].style.display = 'block';
-  text[slideIndex - 1].style.display = 'block';
-  address[slideIndex - 1].style.display = 'block';
   dots[slideIndex - 1].classList.add('active');
 }
 
