@@ -16,13 +16,9 @@ function showSlides(n) {
     slideIndex = slides.length;
   }
 
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = 'none';
-  }
+  slides.forEach(slide => (slide.style.display = 'none'));
 
-  for (i = 0; i < dots.length; i++) {
-    dots[i].classList.remove('active');
-  }
+  dots.forEach(dot => dot.classList.remove('active'));
 
   slides[slideIndex - 1].style.display = 'block';
   dots[slideIndex - 1].classList.add('active');
@@ -35,7 +31,9 @@ var sliderPrev = document.querySelector('.sliderPrev');
 
 listElements.forEach(function (item) {
   item.addEventListener('click', function (event) {
-    showSlides((slideIndex = event.currentTarget.getAttribute('data-number')));
+    let num = Number(event.currentTarget.getAttribute('data-number'));
+    if (isNaN(num)) num = 1;
+    showSlides((slideIndex = num));
   });
 });
 
@@ -46,3 +44,9 @@ sliderNext.addEventListener('click', function (event) {
 sliderPrev.addEventListener('click', function (event) {
   showSlides((slideIndex = slideIndex - 1));
 });
+
+//add auto turn over slides
+setTimeout(function turnNext() {
+  showSlides((slideIndex += 1));
+  setTimeout(turnNext, 4000);
+}, 4000);
