@@ -42,40 +42,40 @@
 
       <!-- Мобильное меню -->
       <div class="backdrop">
-      <div class="mobile-menu__container" data-menu>
-        <div class="mobile-menu">
-          <button class="mobile-menu__btn-close" data-menu-button>
-            <svg class="mobile-menu__icon-close">
-              <use href="images/icons.svg#icon-close"></use>
-            </svg>
-          </button>
-          <div class="button-container">
-            <button type="button" class="mobile-menu__btn-buy">
-              <span class="mobile-menu__btn-buy--mobile">Buy now</span><svg width="8" height="18"
-                class="top-panel__icon-menu">
-                <use href="./images/icons.svg#icon-arrow"></use>
+        <div class="mobile-menu__container" data-menu>
+          <div class="mobile-menu">
+            <button class="mobile-menu__btn-close" data-menu-button>
+              <svg class="mobile-menu__icon-close">
+                <use href="images/icons.svg#icon-close"></use>
               </svg>
             </button>
+            <div class="button-container">
+              <button type="button" class="mobile-menu__btn-buy">
+                <span class="mobile-menu__btn-buy--mobile">Buy now</span
+                ><svg width="8" height="18" class="top-panel__icon-menu">
+                  <use href="./images/icons.svg#icon-arrow"></use>
+                </svg>
+              </button>
+            </div>
+            <ul class="mobile-menu__list">
+              <li class="mobile-menu__item">
+                <a href="./index.html" class="mobile-menu__link" data-menu-button>Home</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a href="#reviews" class="mobile-menu__link" data-menu-button>About us</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a href="#about" class="mobile-menu__link" data-menu-button>How it’s made?</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a href="#products" class="mobile-menu__link" data-menu-button>Our products</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a href="#contacts" class="mobile-menu__link" data-menu-button>Contact</a>
+              </li>
+            </ul>
           </div>
-          <ul class="mobile-menu__list">
-            <li class="mobile-menu__item">
-              <a href="./index.html" class="mobile-menu__link" data-menu-button>Home</a>
-            </li>
-            <li class="mobile-menu__item">
-              <a href="#reviews" class="mobile-menu__link" data-menu-button>About us</a>
-            </li>
-            <li class="mobile-menu__item">
-              <a href="#about" class="mobile-menu__link" data-menu-button>How it’s made?</a>
-            </li>
-            <li class="mobile-menu__item">
-              <a href="#products" class="mobile-menu__link" data-menu-button>Our products</a>
-            </li>
-            <li class="mobile-menu__item">
-              <a href="#contacts" class="mobile-menu__link" data-menu-button>Contact</a>
-            </li>
-          </ul>
         </div>
-      </div>
       </div>
       <!-- --- -->
 
@@ -153,6 +153,14 @@
               ./images/tablet/so-tasty@2x_tablet.webp 2x
             "
             media="(min-width: 768px)"
+            type="image/webp"
+          />
+          <source
+            srcset="
+              ./images/tablet/so-tasty_tablet.webp    1x,
+              ./images/tablet/so-tasty@2x_tablet.webp 2x
+            "
+            media="(max-width: 768px)"
             type="image/webp"
           />
           <source

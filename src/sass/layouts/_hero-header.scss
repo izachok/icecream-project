@@ -220,9 +220,11 @@
 
 .decoration__so-tasty {
   display: none;
+  visibility: hidden;
 
   @include for-tablet-up {
     display: block;
+    visibility: visible;
     position: absolute;
     left: 566px;
     top: 266px;
