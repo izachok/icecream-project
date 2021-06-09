@@ -20,6 +20,8 @@
   }
 }
 .customer-reviews__image {
+  position: relative;
+  z-index: 7;
   width: 85px;
   height: 85px;
 
@@ -33,7 +35,7 @@
   transition: get-transition-prop(transform);
 
   &:hover {
-    transform: scale(1.35);
+    transform: scale(2);
   }
   @include for-tablet-up {
     margin-bottom: 19px;
