@@ -28,28 +28,10 @@
 }
 
 .mobile-menu__btn-buy {
-  display: flex;
-  justify-content: center;
   padding: 11px 45px;
   width: 100%;
-  font-family: var(--primary-font-family);
   font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
   line-height: 1.31;
-  border: none;
-  border-radius: 22px;
-  background-color: var(--secondary-text-color);
-  color: var(--secondary-btn-background-color);
-  fill: currentColor;
-  transition: get-transition-prop(color), get-transition-prop(background-color),
-    get-transition-prop(fill);
-
-  &:hover,
-  &:focus {
-    background-color: var(--secondary-btn-background-color);
-    color: var(--secondary-text-color);
-  }
 
   &--mobile {
     margin-right: 25px;
