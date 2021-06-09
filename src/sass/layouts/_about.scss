@@ -171,10 +171,8 @@
   }
 }
 .about__btn {
-  display: flex;
   min-width: 176px;
   height: 44px;
-  font-size: 14px;
   @include for-tablet-up {
     font-size: 16px;
   }
@@ -182,7 +180,6 @@
 .btn__arrow {
   display: block;
   margin-left: 13px;
-  fill: var(--secondary-btn-background-color);
   width: 10px;
   height: 10px;
 }

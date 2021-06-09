@@ -3,7 +3,6 @@
   padding-left: 37px;
   border-radius: 22px;
   border: none;
-  outline: none;
 
   font-family: var(--primary-font-family);
   font-weight: 700;
@@ -13,8 +12,8 @@
   @include flex-centered;
 
   cursor: pointer;
-
-  transition: get-transition-prop(background-color), get-transition-prop(outline);
+  fill: currentColor;
+  transition: get-transition-prop(background-color), get-transition-prop(fill);
 }
 
 .btn--primary {
@@ -24,7 +23,6 @@
   &:hover,
   &:focus {
     background-color: var(--primary-btn-backg-color-hover);
-    border: 1px solid var(--secondary-btn-backg-color-hover);
   }
 }
 
@@ -35,6 +33,5 @@
   &:hover,
   &:focus {
     background-color: var(--secondary-btn-backg-color-hover);
-    border: 1px solid var(--primary-btn-background-color);
   }
 }
