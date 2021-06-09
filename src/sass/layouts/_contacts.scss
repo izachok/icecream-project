@@ -388,6 +388,13 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 23% 7%;
+
+  @media screen and (max-width: 469px) {
+    height: 300px;
+    width: 320px;
+    background-size: fill;
+    background-position: 40% 50%;
+  }
 }
 
 .contacts__modal-icon {
@@ -410,6 +417,6 @@
 
 .modal__icon-ny {
   top: 40%;
-  left: 83%;
+  left: 82%;
   fill: var(--secondary-section-title-color);
 }
