@@ -111,11 +111,3 @@ onVisibleSpaceListener(
   },
   el => {},
 );
-
-onVisibleSpaceListener(
-  'gallery01',
-  el => {
-    document.getElementById('gallery01').classList.add('animate__flash');
-  },
-  el => {},
-);
