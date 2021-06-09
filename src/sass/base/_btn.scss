@@ -14,7 +14,7 @@
 
   cursor: pointer;
 
-  transition: get-transition-prop(background-color);
+  transition: get-transition-prop(background-color), get-transition-prop(outline);
 }
 
 .btn--primary {
@@ -24,6 +24,7 @@
   &:hover,
   &:focus {
     background-color: var(--primary-btn-backg-color-hover);
+    border: 1px solid var(--secondary-btn-backg-color-hover);
   }
 }
 
@@ -34,5 +35,6 @@
   &:hover,
   &:focus {
     background-color: var(--secondary-btn-backg-color-hover);
+    border: 1px solid var(--primary-btn-background-color);
   }
 }
