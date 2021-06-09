@@ -68,7 +68,6 @@
 
 .products__list-item {
   position: relative;
-  margin-bottom: 130px;
   padding-bottom: 60px;
 
   text-align: center;
@@ -294,11 +293,11 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  top: -60px;
+  top: -110px;
   left: 0;
+  padding: 5px;
   width: 100%;
-  height: 63%;
-  padding: 30px;
+  height: 71%;
   border-radius: 24px;
   color: var(--secondary-text-color);
   transform: translateY(100%);
@@ -306,6 +305,10 @@
   opacity: 0;
   transition: transform $animation-time $animation-function,
     opacity $animation-time $animation-function;
+
+  @include for-tablet-up {
+    padding: 30px;
+  }
 }
 
 .products__overlay--icecream {

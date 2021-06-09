@@ -404,6 +404,7 @@
 }
 
 .description__icon {
+  fill: var(--secondary-btn-background-color);
   @include for-desktop-up {
     width: 16px;
     height: 12px;
@@ -430,12 +431,19 @@
   padding: 0;
 
   @include flex-centered;
-
   fill: var(--secondary-btn-background-color);
+  background-color: var(--primary-btn-background-color);
 
   @include for-desktop-up {
     width: 26px;
     height: 26px;
+  }
+  &:hover,
+  &:focus {
+    background-color: var(--secondary-btn-background-color);
+    .description__icon {
+      fill: var(--secondary-text-color);
+    }
   }
 }
 
