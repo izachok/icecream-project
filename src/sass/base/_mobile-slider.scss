@@ -21,6 +21,7 @@
 .carousel-cell {
   width: 66%;
   min-height: 100%;
+  max-width: 280px;
   margin-right: 10px;
 }
 
@@ -37,9 +38,12 @@
   overflow-y: initial;
 }
 
-.products .container {
+.mobile-products,
+.mobile-contacts {
   @media screen and (min-width: $mobile-width) and (max-width: $tablet-width - 1) {
     width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 
