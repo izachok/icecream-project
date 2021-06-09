@@ -78,4 +78,19 @@ $container-width: 1050px;
 
   --primary-text-size: 16px;
   --secondary-text-size: 14px;
+
+  //переменные для модального окна buy now
+  --hero-modal-border-color: #d41443;
+  --hero-modal-text-color: #000000;
+  --hero-modal-icon-color: #fea5bb;
+  --hero-modal-icon-accent-color: #d31342;
+
+  @keyframes transition {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0%);
+    }
+  }
 }
