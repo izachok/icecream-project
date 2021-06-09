@@ -376,6 +376,40 @@
   margin-left: auto;
 }
 
-.contacts__modal-map {
-  width: 90%;
+// .contacts__modal-map {
+//   width: 90%;
+// }
+
+.modal__locations {
+  position: relative;
+  height: 400px;
+  width: 450px;
+  background-image: url(../images/america-map.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 23% 7%;
+}
+
+.contacts__modal-icon {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+}
+
+.modal__icon-la {
+  top: 45%;
+  left: 11%;
+  fill: var(--primary-section-title-color);
+}
+
+.modal__icon-chicago {
+  top: 30%;
+  left: 63%;
+  fill: var(--secondary-section-title-color-hero);
+}
+
+.modal__icon-ny {
+  top: 40%;
+  left: 83%;
+  fill: var(--secondary-section-title-color);
 }
