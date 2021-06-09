@@ -1,9 +1,9 @@
 <section id="about" class="about">
   <div class="container">
-    <p class="about__label">tradition and love</p>
-    <h2 class="about__title">how it’s made?</h2>
+    <p id="about__label" class="about__label animate__animated">tradition and love</p>
+    <h2 id="about__title" class="about__title animate__animated">how it’s made?</h2>
     <div class="about__section">
-      <div class="about__image">
+      <div id="about-img" class="about__image animate__animated">
         <picture>
           <source
             media="(min-width:1200px)"
@@ -38,7 +38,7 @@
           <img src="./images/mobile/cow_mobile.png" alt="Cow with milk" />
         </picture>
       </div>
-      <div class="about__descrp">
+      <div id="about__descrp" class="about__descrp">
         <p class="about__text text">
           Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus
           lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.
@@ -49,12 +49,104 @@
           maximus. Cras massa nibh, tincidunt.
         </p>
         <p class="about__text--paragraf text">Aliquam erat volutpat. Aenean accumsan.</p>
-        <button class="about__btn btn btn--primary" type="button">
+        <button
+          class="about__btn btn btn--primary"
+          type="button"
+          data-target="modal-about"
+          data-toggle="modal"
+        >
           Read more
           <svg class="btn__arrow">
             <use href="./images/icons.svg#icon-arrow"></use>
           </svg>
         </button>
+        <div id="modal-about" class="modal">
+          <div class="modal-window">
+            <button
+              type="button"
+              class="modal-window__close"
+              aria-label="close"
+              data-dismiss="modal"
+            >
+              <svg
+                class="modal-window__icon"
+                data-dismiss="modal"
+                width="14"
+                height="14"
+                aria-hidden="true"
+              >
+                <use href="./images/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+            <div class="modal-about__wrap">
+              <div>
+                <h3 class="modal-about__title">Ice Cream Spreads Happiness</h3>
+                <div class="modal-about__position">
+                  <p class="modal-about__text">
+                    Do you know what is <span class="modal-about__text--accent">amazing</span> to
+                    me? How something so simple can bring such
+                    <span class="modal-about__text--accent">great joy</span> to people of all ages,
+                    race, and gender. Thank you Ice Cream Factory for bringing
+                    <span class="modal-about__text--accent">sunshine</span> to my cloudy soul. My
+                    tummy may have loved the Peanut Butter Blast
+                    <span class="modal-about__text--accent">ice cream</span> but my heart loved the
+                    joyful spirit that filled our community today. I pray that you continue to bring
+                    people together as your <span class="modal-about__text--accent">journey</span>
+                    continues.
+                  </p>
+                  <picture class="modal-about__img">
+                    <source
+                      srcset="
+                        ./images/desktop/ice-cream-cone_desktop.webp    1x,
+                        ./images/desktop/ice-cream-cone@2x_desktop.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/ice-cream-cone_tablet.webp    1x,
+                        ./images/tablet/ice-cream-cone@2x_tablet.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile/ice-cream-cone_mobile.webp    1x,
+                        ./images/mobile/ice-cream-cone@2x_mobile.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/desktop/ice-cream-cone_desktop.png    1x,
+                        ./images/desktop/ice-cream-cone@2x_desktop.png 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/png"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/ice-cream-cone_tablet.png    1x,
+                        ./images/tablet/ice-cream-cone@2x_tablet.png 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/png"
+                    />
+                    <img
+                      src="./images/mobile/ice-cream-cone_mobile.png"
+                      alt="icecream"
+                      width="171"
+                      height="410"
+                    />
+                  </picture>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>

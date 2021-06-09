@@ -3,7 +3,6 @@
   padding-left: 37px;
   border-radius: 22px;
   border: none;
-  outline: none;
 
   font-family: var(--primary-font-family);
   font-weight: 700;
@@ -13,8 +12,8 @@
   @include flex-centered;
 
   cursor: pointer;
-
-  transition: get-transition-prop(background-color);
+  fill: currentColor;
+  transition: get-transition-prop(background-color), get-transition-prop(fill);
 }
 
 .btn--primary {

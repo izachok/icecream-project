@@ -33,6 +33,7 @@
           <use href="./images/icons.svg#icon-menu"></use>
         </svg>
       </button>
+
       <button
         type="button"
         class="btn top-panel__btn-buy"
@@ -41,14 +42,53 @@
       >
         <span class="top-panel__btn-buy--indent">Buy now</span
         ><svg width="8" height="18" class="top-panel__icon-menu">
+          =======
+
           <use href="./images/icons.svg#icon-arrow"></use>
         </svg>
       </button>
 
-      <include src="./partials/mobile-menu.html"></include>
+      <!-- Мобильное меню -->
+      <div class="backdrop">
+        <div class="mobile-menu__container" data-menu>
+          <div class="mobile-menu">
+            <button class="mobile-menu__btn-close" data-menu-button>
+              <svg class="mobile-menu__icon-close">
+                <use href="images/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+            <div class="button-container">
+              <button type="button" class="btn btn--primary mobile-menu__btn-buy">
+                <span class="mobile-menu__btn-buy--mobile">Buy now</span
+                ><svg width="8" height="18" class="top-panel__icon-menu">
+                  <use href="./images/icons.svg#icon-arrow"></use>
+                </svg>
+              </button>
+            </div>
+            <ul class="mobile-menu__list">
+              <li class="mobile-menu__item">
+                <a href="./index.html" class="mobile-menu__link" data-menu-button>Home</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a href="#reviews" class="mobile-menu__link" data-menu-button>About us</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a href="#about" class="mobile-menu__link" data-menu-button>How it’s made?</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a href="#products" class="mobile-menu__link" data-menu-button>Our products</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a href="#contacts" class="mobile-menu__link" data-menu-button>Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- --- -->
 
       <div class="decoration">
-        <div class="decoration__ellipse"></div>
+        <div class="decoration__ellipse animate__animated animate__backInDown"></div>
         <picture>
           <source
             srcset="
@@ -103,7 +143,7 @@
             alt="icecream"
             width="171"
             height="410"
-            class="decoration__icecream-cone"
+            class="decoration__icecream-cone animate__animated animate__backInUp"
           />
         </picture>
         <picture>
@@ -121,6 +161,14 @@
               ./images/tablet/so-tasty@2x_tablet.webp 2x
             "
             media="(min-width: 768px)"
+            type="image/webp"
+          />
+          <source
+            srcset="
+              ./images/tablet/so-tasty_tablet.webp    1x,
+              ./images/tablet/so-tasty@2x_tablet.webp 2x
+            "
+            media="(max-width: 768px)"
             type="image/webp"
           />
           <source
@@ -144,7 +192,7 @@
             alt="so-tasty"
             width="168"
             height="133"
-            class="decoration__so-tasty"
+            class="decoration__so-tasty animate__animated animate__backInRight"
           />
         </picture>
         <div class="decoration__circle"></div>
@@ -163,13 +211,13 @@
       </h1>
       <ul class="hero__btn">
         <li class="hero__item">
-          <a href="#products" class="hero__link">Products</a>
+          <a href="#products" class="hero__link btn--secondary">Products</a>
         </li>
         <li class="hero__item hero__item--indent">
-          <a href="#about" class="hero__link hero__link--color">How it’s made?</a>
+          <a href="#about" class="hero__link btn--primary">How it’s made?</a>
         </li>
       </ul>
-      <div class="hero__block">
+      <div class="hero__block animate__animated animate__backInLeft">
         <picture>
           <source
             srcset="./images/desktop/milk_desktop.webp 1x, ./images/desktop/milk@2x_desktop.webp 2x"
@@ -205,11 +253,13 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
             incididunt ut labore et
           </p>
-          <button type="button" class="btn description__btn">
-            <svg width="8" height="8" class="description__icon">
-              <use href="./images/icons.svg#icon-arrow-right"></use>
-            </svg>
-          </button>
+          <div class="btn description__btn">
+            <a href="#about">
+              <svg width="8" height="8" class="description__icon">
+                <use href="./images/icons.svg#icon-arrow-right"></use>
+              </svg>
+            </a>
+          </div>
         </div>
       </div>
     </section>
