@@ -1,16 +1,16 @@
 function isOnVisibleSpace(element) {
-  var bodyHeight = window.innerHeight;
-  var elemRect = element.getBoundingClientRect();
-  var offset = elemRect.top;
+  const bodyHeight = window.innerHeight;
+  const elemRect = element.getBoundingClientRect();
+  const offset = elemRect.top;
   if (offset < 0) return false;
   if (offset > bodyHeight) return false;
   return true;
 }
 
-var listenedElements = [];
+let listenedElements = [];
 window.onscroll = function () {
   listenedElements.forEach(item => {
-    var result = isOnVisibleSpace(item.el);
+    const result = isOnVisibleSpace(item.el);
     if (item.el.isOnVisibleSpace && !result) {
       item.el.isOnVisibleSpace = false;
       item.outVisibleSpace(item.el);
@@ -24,7 +24,7 @@ window.onscroll = function () {
   });
 };
 function onVisibleSpaceListener(elementId, cbIn, cbOut) {
-  var el = document.getElementById(elementId);
+  let el = document.getElementById(elementId);
   listenedElements.push({
     el: el,
     inVisibleSpace: cbIn,
@@ -60,6 +60,62 @@ onVisibleSpaceListener(
   'about__title',
   el => {
     document.getElementById('about__title').classList.add('animate__backInDown');
+  },
+  el => {},
+);
+
+onVisibleSpaceListener(
+  'icecream',
+  el => {
+    document.getElementById('icecream').classList.add('animate__rotateIn');
+  },
+  el => {},
+);
+
+onVisibleSpaceListener(
+  'icecoffee',
+  el => {
+    document.getElementById('icecoffee').classList.add('animate__rotateIn');
+  },
+  el => {},
+);
+
+onVisibleSpaceListener(
+  'milkshakes',
+  el => {
+    document.getElementById('milkshakes').classList.add('animate__rotateIn');
+  },
+  el => {},
+);
+
+onVisibleSpaceListener(
+  'chicago',
+  el => {
+    document.getElementById('chicago').classList.add('animate__backInLeft');
+  },
+  el => {},
+);
+
+onVisibleSpaceListener(
+  'los-angeles',
+  el => {
+    document.getElementById('los-angeles').classList.add('animate__backInDown');
+  },
+  el => {},
+);
+
+onVisibleSpaceListener(
+  'new-york',
+  el => {
+    document.getElementById('new-york').classList.add('animate__backInRight');
+  },
+  el => {},
+);
+
+onVisibleSpaceListener(
+  'gallery01',
+  el => {
+    document.getElementById('gallery01').classList.add('animate__flash');
   },
   el => {},
 );
