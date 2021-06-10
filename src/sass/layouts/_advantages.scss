@@ -55,15 +55,17 @@
 }
 
 .advantages-list__text {
+  font-weight: 700;
   line-height: 1.7;
   color: var(--block-title-color);
 
   @include for-tablet-up {
-    line-height: 1.74;
+    letter-spacing: normal;
   }
 
   @include for-desktop-up {
     line-height: 1.76;
+    letter-spacing: 0.02em;
   }
 }
 
@@ -74,6 +76,7 @@
   line-height: 1.139;
   letter-spacing: 0.04em;
   text-transform: uppercase;
+  margin-bottom: 16px;
 
   @include for-tablet-up {
     font-size: 48px;
