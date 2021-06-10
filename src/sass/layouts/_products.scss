@@ -25,6 +25,7 @@
 
   @include for-tablet-up {
     font-size: 26px;
+    line-height: 0.91;
   }
 
   @include for-desktop-up {
@@ -37,6 +38,7 @@
 
   font-family: var(--secondary-font-family);
   font-size: 34px;
+  font-weight: 400;
   line-height: 1.14;
   text-align: center;
   letter-spacing: 0.04em;
@@ -45,7 +47,7 @@
 
   @include for-tablet-up {
     margin-bottom: 150px;
-
+    line-height: 0.91;
     font-size: 48px;
   }
 
@@ -215,6 +217,7 @@
 
 .products__subtitle {
   padding-top: 161px;
+  margin-bottom: 30px;
 
   font-family: var(--secondary-font-family);
   font-size: 20px;
@@ -230,6 +233,7 @@
   }
 
   @include for-desktop-up {
+    padding-top: 163px;
     font-size: 30px;
     line-height: 1.13;
   }
@@ -237,7 +241,6 @@
 
 .products__text::before {
   content: '';
-  margin-top: 30px;
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
