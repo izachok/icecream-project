@@ -1,4 +1,4 @@
-.modal-window {
+.hero__modal-window {
   position: relative;
   padding-top: 150px;
   padding-left: 50px;
@@ -42,9 +42,9 @@
     left: -350px;
   }
 }
-.modal-window__close {
-  border-color: transparent;
-}
+// .modal-window__close {
+//   border-color: transparent;
+// }
 .circle {
   border-radius: 50%;
   background-color: var(--secondary-background-color);
@@ -130,7 +130,7 @@
     left: 170px;
   }
 }
-.modal-hero__lable {
+.modal-hero__label {
   color: var(--secondary-section-title-color);
   font-family: var(--secondary-font-family);
   font-weight: 400;
@@ -162,7 +162,7 @@
     font-size: 35px;
   }
 }
-.input-lable {
+.input-label {
   color: var(--hero-modal-text-color);
   font-weight: 400;
   font-size: 12px;
