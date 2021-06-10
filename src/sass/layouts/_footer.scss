@@ -88,6 +88,14 @@
 
 .footer__socials-item:not(:last-child) {
   margin-right: 28px;
+
+  @include for-tablet-up {
+    margin-right: 30px;
+  }
+
+  @include for-desktop-up {
+    margin-right: 24px;
+  }
 }
 .social-icon {
   background-color: var(--social-btn-backg-color);
