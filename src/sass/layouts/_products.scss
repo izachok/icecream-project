@@ -69,6 +69,7 @@
 .products__list-item {
   position: relative;
   padding-bottom: 60px;
+  min-height: 485px;
 
   text-align: center;
   border-radius: 24px;
@@ -85,6 +86,7 @@
   @include for-desktop-up {
     @include element;
     flex-basis: get-column-basis(3);
+    min-height: 525px;
   }
 
   &::before {
@@ -275,7 +277,7 @@
 
 .products__btn {
   position: absolute;
-  bottom: 15px;
+  // bottom: 15px;
   width: 40px;
   height: 40px;
 
@@ -285,7 +287,7 @@
 
   cursor: pointer;
   transition: background-color $animation-time $animation-function;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
 
   &:hover,
   &:focus {
@@ -328,6 +330,10 @@
   @include for-tablet-up {
     padding: 30px;
   }
+
+  @include for-desktop-up {
+    top: -80px;
+  }
 }
 
 .products__overlay--icecream {
@@ -357,5 +363,5 @@
 .overlay-show {
   pointer-events: initial;
   opacity: 1;
-  transform: translateY(50%);
+  transform: translateY(35%);
 }
