@@ -18,7 +18,7 @@
 
   font-family: var(--secondary-font-family);
   font-size: 18px;
-  line-height: 1.16;
+  line-height: 1.14;
   text-align: center;
   text-transform: uppercase;
   color: var(--secondary-section-title-color);
@@ -37,6 +37,7 @@
 
   font-family: var(--secondary-font-family);
   font-size: 34px;
+  font-weight: 400;
   line-height: 1.14;
   text-align: center;
   letter-spacing: 0.04em;
@@ -45,7 +46,6 @@
 
   @include for-tablet-up {
     margin-bottom: 150px;
-
     font-size: 48px;
   }
 
@@ -69,6 +69,7 @@
 .products__list-item {
   position: relative;
   padding-bottom: 60px;
+  min-height: 440px;
 
   text-align: center;
   border-radius: 24px;
@@ -85,6 +86,7 @@
   @include for-desktop-up {
     @include element;
     flex-basis: get-column-basis(3);
+    min-height: 525px;
   }
 
   &::before {
@@ -215,6 +217,7 @@
 
 .products__subtitle {
   padding-top: 161px;
+  margin-bottom: 30px;
 
   font-family: var(--secondary-font-family);
   font-size: 20px;
@@ -230,6 +233,7 @@
   }
 
   @include for-desktop-up {
+    padding-top: 163px;
     font-size: 30px;
     line-height: 1.13;
   }
@@ -237,7 +241,6 @@
 
 .products__text::before {
   content: '';
-  margin-top: 30px;
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
@@ -274,7 +277,7 @@
 
 .products__btn {
   position: absolute;
-  bottom: 15px;
+  // bottom: 15px;
   width: 40px;
   height: 40px;
 
@@ -284,7 +287,7 @@
 
   cursor: pointer;
   transition: background-color $animation-time $animation-function;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
 
   &:hover,
   &:focus {
@@ -311,7 +314,7 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  top: -110px;
+  top: -70px;
   left: 0;
   padding: 5px;
   width: 100%;
@@ -326,6 +329,10 @@
 
   @include for-tablet-up {
     padding: 30px;
+  }
+
+  @include for-desktop-up {
+    top: -80px;
   }
 }
 
@@ -356,5 +363,5 @@
 .overlay-show {
   pointer-events: initial;
   opacity: 1;
-  transform: translateY(50%);
+  transform: translateY(35%);
 }
