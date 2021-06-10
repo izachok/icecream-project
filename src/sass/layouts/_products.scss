@@ -18,14 +18,13 @@
 
   font-family: var(--secondary-font-family);
   font-size: 18px;
-  line-height: 1.16;
+  line-height: 1.14;
   text-align: center;
   text-transform: uppercase;
   color: var(--secondary-section-title-color);
 
   @include for-tablet-up {
     font-size: 26px;
-    line-height: 0.91;
   }
 
   @include for-desktop-up {
@@ -47,7 +46,6 @@
 
   @include for-tablet-up {
     margin-bottom: 150px;
-    line-height: 0.91;
     font-size: 48px;
   }
 
